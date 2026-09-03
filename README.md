@@ -20,6 +20,7 @@ home page.
 | [docs/en/manual.md](docs/en/manual.md) | the manual: roles, objects, the process, the warehouse, limits, analytics, tasks |
 | [docs/en/setup-example.md](docs/en/setup-example.md) | a catalog from scratch, step by step: entity, groups, category, SLA, rights, items, kits, limits, acceptance order |
 | [docs/en/prod-checklist.md](docs/en/prod-checklist.md) | production rollout: requirements, installation, checks, pilot, upgrade, rollback |
+| [docs/en/wide-layout.md](docs/en/wide-layout.md) | the catalog at full page width: how to turn it on, what changes, measurements at six resolutions |
 
 The whole manual as one printable file, with 27 screenshots:
 [docs/pdf/manual-en.pdf](docs/pdf/manual-en.pdf) (32 pages).
@@ -74,7 +75,8 @@ allowance through another order.
 1320 px; turn on *Full page width* and the catalog takes the whole screen:
 four cards per row at 1600 px, five at 1920 px, six at 2560 px. Long text
 stays within a readable line, the cart does not stretch, and on a tablet or a
-phone the layout is unchanged.
+phone the layout is unchanged. The details, with before-and-after screenshots
+and measurements, are in [docs/en/wide-layout.md](docs/en/wide-layout.md).
 
 ![The catalog at full page width](docs/img/en/wide-layout.png)
 

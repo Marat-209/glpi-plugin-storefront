@@ -96,7 +96,7 @@ and **Issue limits**.
 | Available from parent entities | opens the catalog to people working higher up the tree; sibling entities still do not see it |
 | Catalog is active | a disabled catalog cannot be ordered from |
 | Tile on the self-service home page | the catalog's square next to *Report a problem* and *Request a service*; created and removed when the catalog is saved |
-| Full page width | GLPI's self-service keeps content within 1320 px; “yes” lifts that limit for this catalog: on a wide monitor four to six item cards fit in a row instead of three. Long text stays within a readable line, the cart does not stretch, and on a tablet or a phone the layout is unchanged |
+| Full page width ([details](wide-layout.md)) | GLPI's self-service keeps content within 1320 px; “yes” lifts that limit for this catalog: on a wide monitor four to six item cards fit in a row instead of three. Long text stays within a readable line, the cart does not stretch, and on a tablet or a phone the layout is unchanged |
 | Catalog icon, Tile illustration | appearance |
 
 **Announcement above the catalog** — a text and its style (*Regular
