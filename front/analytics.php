@@ -96,7 +96,9 @@ $cards = [
     [__('Выдано единиц', 'storefront'), $num((int) $totals['qty']), 'ti ti-stack-2'],
 ];
 if ($showMoney) {
-    $cards[] = [__('Стоимость выданного', 'storefront'), $money((float) $totals['sum']) . ' ₽', 'ti ti-cash'];
+    // Знак валюты — через каталог: в английском интерфейсе рубль не к месту.
+    $cards[] = [__('Стоимость выданного', 'storefront'),
+        sprintf(__('%s ₽', 'storefront'), $money((float) $totals['sum'])), 'ti ti-cash'];
 }
 $cards[] = [
     __('Срок выдачи, медиана', 'storefront'),

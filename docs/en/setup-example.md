@@ -106,6 +106,13 @@ On the other tabs of the profile grant the standard GLPI rights: tickets and
 followups — read and update; consumables — read, update, create; ticket
 categories, entities, groups, users and job titles — read.
 
+**Give the approvers' profile the *Approval of tickets* right.**
+**Administration → Profiles → the profile the managers work under → the
+*Assistance* tab → *Approval of tickets* → *Approve a request*.** Without it a
+manager receives the approval e-mail but cannot open the ticket: GLPI admits
+the requester, the assignee and an approver holding this right. The stock
+*Self-Service* profile does not have it.
+
 **Assign the profile to the storekeeper in their entity:**
 **Administration → Users → the user → the *Authorizations* tab → add**: the
 profile `Office supplies storekeeper`, the entity `Facilities`,
@@ -131,6 +138,7 @@ Fill in the form section by section.
 | Available from parent entities | **yes** — the employees work from the root |
 | Catalog is active | yes |
 | Tile on the self-service home page | **yes** |
+| Full page width | no — the example has six items and the middle of the page is enough; turn it on when there are many items |
 | Tile illustration | any suitable picture |
 
 **Announcement above the catalog**

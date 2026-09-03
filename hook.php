@@ -54,6 +54,8 @@ function plugin_storefront_install(): bool
 
             -- плитка на главной странице самообслуживания
             `show_on_home` TINYINT NOT NULL DEFAULT 1,
+            -- витрина во всю ширину страницы: выбор администратора витрины
+            `wide_layout` TINYINT NOT NULL DEFAULT 0,
             `illustration` VARCHAR(60) NOT NULL DEFAULT 'request-support',
             `tiles_id` INT UNSIGNED NOT NULL DEFAULT 0,
 
@@ -472,6 +474,8 @@ function plugin_storefront_install(): bool
         ['value' => 1]);
     // Норма лимита: у каждого своя или одна общая на отдел, подразделение,
     // должность или витрину целиком. Умолчание сохраняет прежнее поведение.
+    $migration->addField('glpi_plugin_storefront_catalogs', 'wide_layout', 'bool',
+        ['value' => 0, 'after' => 'show_on_home']);
     $migration->addField('glpi_plugin_storefront_limits', 'scope_mode', 'string',
         ['value' => 'each', 'after' => 'scope_items_id']);
 

@@ -21,7 +21,7 @@ production environment is in [prod-checklist.md](prod-checklist.md).
 | Role | Rights | What they do |
 |---|---|---|
 | **Employee** | self-service interface, no plugin rights | orders from the catalog, follows the order in the ticket, prints the issue note, rates items |
-| **Approver** | the same rights as an employee | answers the approval request with the standard buttons in the ticket |
+| **Approver** | an employee's rights plus GLPI's own *Approval of tickets* → *Approve a request* | answers the approval request with the standard buttons in the ticket |
 | **Storekeeper** | *Orders: picking queue and issue* and *Warehouse: stock, receipts, write-offs, transfers* — read and update | runs the order queue, approves quantities, issues, receives, writes off, transfers, counts stock |
 | **Catalog administrator** | *Catalogs, items, kits and limits* — all rights | creates catalogs, items, warehouses, kits and limits; reads analytics and reports |
 
@@ -29,6 +29,12 @@ Rights are granted on the profile form: **Administration → Profiles → the
 profile → the *Internal store* tab**. A profile is assigned to a user **in a
 particular entity** — and that is what bounds responsibility: the storekeeper
 of one entity neither sees nor touches another entity's warehouse.
+
+**The approver needs GLPI's own *Approval of tickets* right** (*Approve a
+request*). Without it GLPI will not let them into the ticket: an approver is
+neither the requester nor an assignee, and it is this right that grants them
+access. The stock self-service profile does not have it — add it to the profile
+the managers work under.
 
 The storekeeper additionally needs standard GLPI rights: tickets and followups
 (read and update), consumables (read, update, create), and read access to
@@ -57,6 +63,13 @@ An employee opens the catalog from the tile on the self-service home page. The
 tile appears when *Tile on the self-service home page* is enabled for the
 catalog.
 
+One GLPI trait is worth knowing about tiles: GLPI shows the tile set of the
+nearest entity up the tree that has any tiles. So the tile of a catalog with
+*Available from parent entities* enabled lives in the root entity and appears
+on everybody's home page. The catalog itself stays closed: an employee of
+another entity who clicks such a tile gets the unavailability message and the
+list of their own catalogs.
+
 ---
 
 ## 3. The plugin's objects
@@ -83,6 +96,7 @@ and **Issue limits**.
 | Available from parent entities | opens the catalog to people working higher up the tree; sibling entities still do not see it |
 | Catalog is active | a disabled catalog cannot be ordered from |
 | Tile on the self-service home page | the catalog's square next to *Report a problem* and *Request a service*; created and removed when the catalog is saved |
+| Full page width | GLPI's self-service keeps content within 1320 px; “yes” lifts that limit for this catalog: on a wide monitor four to six item cards fit in a row instead of three. Long text stays within a readable line, the cart does not stretch, and on a tablet or a phone the layout is unchanged |
 | Catalog icon, Tile illustration | appearance |
 
 **Announcement above the catalog** — a text and its style (*Regular

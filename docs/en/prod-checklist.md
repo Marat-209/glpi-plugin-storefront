@@ -1,7 +1,7 @@
 # Production rollout and testing order
 
 A document for whoever installs the plugin on a production GLPI. Version
-**1.0.0-rc5** is a release candidate: functionally complete, verified on a
+**1.0.0-rc7** is a release candidate: functionally complete, verified on a
 test stand, and intended for pilot use by a limited group of employees.
 
 ---
@@ -27,6 +27,9 @@ test stand, and intended for pilot use by a limited group of employees.
       built-in tasks have a last-run date.
 - [ ] Decide who will be the catalog administrator and who the storekeeper,
       and in which entities their profiles will be assigned.
+- [ ] Grant the approvers' profile GLPI's own **Approval of tickets → Approve a
+      request** right: without it a manager cannot open the ticket they are
+      supposed to answer in.
 
 ## 3. Installing
 
@@ -60,7 +63,7 @@ person would create them in the interface.
 
 | # | What to check | Expected result |
 |---|---|---|
-| 1 | **Setup → Plugins** | “Internal store”, version 1.0.0-rc5, state “Enabled” |
+| 1 | **Setup → Plugins** | “Internal store”, version 1.0.0-rc7, state “Enabled” |
 | 2 | **Management → Store** | the entry is there and opens the (empty) list of catalogs |
 | 3 | The sub-entries | Store catalogs, Order queue, Orders, Item import, Warehouse, Analytics, Reports, Job title levels |
 | 4 | **Administration → Profiles → any profile** | there is an *Internal store* tab with three rights |
@@ -95,6 +98,8 @@ the test stand:
 - [ ] The employee finds the catalog by its tile without asking where it is.
 - [ ] An order below the threshold goes to the warehouse without approval; a
       more expensive one reaches the manager.
+- [ ] The approver opens the ticket and answers with the buttons (the
+      *Approval of tickets* right is granted).
 - [ ] An approver's refusal: the ticket gets a solution and the status
       **Solved**, the stock is untouched, and the employee sees the reason.
 - [ ] The storekeeper reduces a quantity with a reason — the employee sees

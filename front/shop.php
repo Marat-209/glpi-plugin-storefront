@@ -17,6 +17,7 @@ use GlpiPlugin\Storefront\Order;
 use GlpiPlugin\Storefront\OrderItem;
 use GlpiPlugin\Storefront\Product;
 use GlpiPlugin\Storefront\Rating;
+use GlpiPlugin\Storefront\Ui;
 use GlpiPlugin\Storefront\Stock;
 use GlpiPlugin\Storefront\Warehouse;
 
@@ -565,10 +566,10 @@ printf(
     $esc($self)
 );
 if (trim((string) $catalog->fields['description']) !== '') {
-    echo '<p class="text-muted mb-2">' . $esc($catalog->fields['description']) . '</p>';
+    echo '<p class="text-muted mb-2 sf-lead">' . $esc($catalog->fields['description']) . '</p>';
 }
 if (trim((string) $catalog->fields['header']) !== '') {
-    echo '<p class="text-muted">' . $esc($catalog->fields['header']) . '</p>';
+    echo '<p class="text-muted sf-lead">' . $esc($catalog->fields['header']) . '</p>';
 }
 
 // Кнопки «минус-плюс» на карточках: правят число в поле рядом, ничего
@@ -588,16 +589,21 @@ function sfStep(btn, delta) {
 }
 JS);
 
+// Ширина страницы — настройка витрины: правило действует только здесь.
+if ($catalog->isWideLayout()) {
+    echo Ui::wideLayoutStyle();
+}
+
 echo '<div class="row g-3">';
 
 /* ================================================== каталог ============== */
-echo '<div class="col-12 col-lg-8">';
+echo '<div class="col-12 col-lg-8 sf-items">';
 
 /* ---------------- доска объявлений ---------------- */
 // Над карточками, а не внизу страницы: правила приёма нужно прочитать
 // до того, как человек собрал корзину и упёрся в отказ.
 if ($catalog->announcement() !== '') {
-    printf('<div class="alert alert-%s"><div class="d-flex gap-2">'
+    printf('<div class="alert alert-%s sf-announce"><div class="d-flex gap-2">'
         . '<i class="ti ti-speakerphone fs-3"></i><div>%s</div></div></div>',
         $esc($catalog->announcementLevel()),
         nl2br($esc($catalog->announcement())));
@@ -741,7 +747,7 @@ foreach ($shown as $it) {
     $free = $it['free'];
     $have = $inCart[$pid] ?? 0;
 
-    echo '<div class="col-12 col-sm-6 col-xl-4"><div class="card h-100'
+    echo '<div class="col-12 col-sm-6 col-xl-4 sf-card"><div class="card h-100'
         . ($have > 0 ? ' border-primary' : '') . '"><div class="card-body '
         . 'd-flex flex-column gap-2">';
 
@@ -772,7 +778,7 @@ foreach ($shown as $it) {
     // Бесплатную выдачу подписываем явно: пустое место читается как
     // «цену забыли заполнить».
     if ($showPrices || $it['paid']) {
-        printf('<div class="fs-4 fw-bold">%s <span class="fs-6 fw-normal text-muted">₽</span>%s</div>',
+        printf(__('<div class="fs-4 fw-bold">%s <span class="fs-6 fw-normal text-muted">₽</span>%s</div>', 'storefront'),
             Html::formatNumber($it['price']),
             $it['paid'] && !$showPrices
                 ? __(' <span class="badge bg-orange-lt align-middle">платно</span>', 'storefront') : '');
@@ -863,7 +869,7 @@ if ($pages > 1) {
 echo '</div>';
 
 /* ================================================== корзина ============== */
-echo '<div class="col-12 col-lg-4"><div style="position:sticky;top:1rem">';
+echo '<div class="col-12 col-lg-4 sf-cart"><div style="position:sticky;top:1rem">';
 echo '<div class="card"><div class="card-body">';
 printf(__('<div class="fw-bold mb-2"><i class="ti ti-shopping-cart me-1"></i>Корзина%s</div>', 'storefront'),
     count($cart) ? __(' <span class="text-muted fw-normal">— позиций ', 'storefront') . count($cart) . '</span>' : '');

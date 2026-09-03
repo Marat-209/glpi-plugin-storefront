@@ -70,6 +70,14 @@ allowance through another order.
 | ![Warehouse](docs/img/en/20-stock.png) | ![Analytics](docs/img/en/18-analytics.png) |
 | Stock and movements | Analytics |
 
+**Page width is a catalog setting.** GLPI's self-service keeps content within
+1320 px; turn on *Full page width* and the catalog takes the whole screen:
+four cards per row at 1600 px, five at 1920 px, six at 2560 px. Long text
+stays within a readable line, the cart does not stretch, and on a tablet or a
+phone the layout is unchanged.
+
+![The catalog at full page width](docs/img/en/wide-layout.png)
+
 ## Requirements
 
 - GLPI 11.0 or newer (verified on 11.0.8)

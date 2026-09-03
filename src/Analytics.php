@@ -83,7 +83,9 @@ final class Analytics
         ]) as $row) {
             $order = new Order();
             $order->fields = (array) $row;
-            $label = $order->recipientLabel();
+            // В разрезе получателей нужно имя: «Для себя» слило бы
+            // все личные заказы в одну строку.
+            $label = $order->recipientName();
             $acc[$label] = ($acc[$label] ?? 0) + 1;
         }
         arsort($acc);

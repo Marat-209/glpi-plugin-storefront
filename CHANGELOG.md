@@ -1,5 +1,52 @@
 # Changelog
 
+## 1.0.0-rc7 — 2026-09-03
+
+### Added
+
+- **Catalog setting “Full page width”.** GLPI's self-service keeps page content
+  within 1320 px, so on a wide monitor the catalog occupied the middle third of
+  the screen. The catalog administrator can now lift that limit for their own
+  catalog: the rule is printed only on that catalog's page and only from
+  1400 px, so a tablet and a phone keep the standard layout. Widening alone
+  would have made things worse, so the grid changes with it — long text stays
+  within a readable line (104 characters), the cart column narrows instead of
+  stretching, and the item grid goes from three cards per row to four at
+  1600 px, five at 1920 px and six at 2560 px. Measured at 375, 768, 1366,
+  1600, 1920 and 2560 px: no horizontal scrolling at any of them.
+
+## 1.0.0-rc6 — 2026-09-03
+
+Fixes found by walking the whole route through a browser.
+
+### Fixed
+
+- **The catalog form now saves the entity and “Visible in child entities”.**
+  GLPI prints its own hidden `entities_id` and `is_recursive` fields in the
+  form footer — after the plugin's own fields — so the administrator's choice
+  was silently dropped and a catalog stayed in the active entity. The plugin's
+  fields now have their own names and are applied when the input is prepared.
+- **A new catalog is born working.** GLPI fills a new record's fields with
+  empty strings rather than the schema defaults, so a catalog created without
+  touching the switches came out disabled, without a tile, without inheritance
+  and with the job title threshold at “intern”. Defaults now match the
+  documented ones.
+- **The issue note and the “who receives” report name the recipient.** Both
+  used the card label, so an order for oneself printed “For myself” on a
+  document that a person signs, and every personal order collapsed into one
+  report row.
+
+### Documentation
+
+- The approver's profile needs GLPI's own **Approval of tickets → Approve a
+  request** right: without it GLPI does not let them into the ticket they are
+  supposed to answer in. Added to the manual, the setup example and the
+  production checklist.
+- Described how GLPI scopes self-service tiles: it shows the tile set of the
+  nearest entity up the tree that has any tiles, so the tile of a catalog
+  published to parent entities is visible to everyone while the catalog itself
+  stays closed.
+
 ## 1.0.0-rc5 — 2026-09-03
 
 The first public release candidate: functionally complete, verified on test
@@ -58,6 +105,52 @@ stands, intended for pilot use on a production GLPI before the 1.0.0 tag.
 ---
 
 # История изменений
+
+## 1.0.0-rc7 — 3 сентября 2026
+
+### Добавлено
+
+- **Настройка витрины «Во всю ширину страницы».** Самообслуживание GLPI держит
+  содержимое страницы в 1320 точках, поэтому на широком мониторе витрина
+  занимала середину экрана. Теперь администратор витрины может снять это
+  ограничение для своей витрины: правило печатается только на её странице и
+  только с 1400 точек, поэтому на планшете и телефоне вид штатный. Одной
+  ширины было бы мало, поэтому вместе с ней меняется сетка: длинный текст
+  остаётся в читаемой строке (104 знака), корзина сужается вместо растяжения,
+  а карточки идут по четыре в ряду на 1600, по пять на 1920 и по шесть на
+  2560 точках. Замерено на 375, 768, 1366, 1600, 1920 и 2560: горизонтальной
+  прокрутки нет ни на одном разрешении.
+
+## 1.0.0-rc6 — 3 сентября 2026
+
+Правки, найденные проходом всего маршрута в браузере.
+
+### Исправлено
+
+- **Форма витрины сохраняет подразделение и «Видна в дочерних
+  подразделениях».** GLPI печатает свои скрытые поля `entities_id` и
+  `is_recursive` в подвале формы — после полей плагина, — поэтому выбор
+  администратора молча терялся, а витрина оставалась в активной организации.
+  Поля плагина получили свои имена и применяются при разборе входа.
+- **Новая витрина рождается работающей.** GLPI заполняет поля новой записи
+  пустыми строками, а не значениями по умолчанию из схемы, поэтому витрина,
+  созданная без правки переключателей, выходила выключенной, без плитки, без
+  наследования вниз и с порогом должности «стажёр». Значения по умолчанию
+  приведены к тем, что описаны в руководстве.
+- **В накладной и в отчёте «кто получает» стоит имя получателя.** Обе страницы
+  брали подпись карточки, поэтому в подписываемом документе печаталось «Для
+  себя», а в отчёте все личные заказы сливались в одну строку.
+
+### Документация
+
+- Профилю согласующих нужно штатное право GLPI **«Согласование заявок» →
+  «Согласовать запрос»**: без него GLPI не пускает его в заявку, в которой он
+  должен ответить. Добавлено в руководство, пример настройки и чек-лист
+  выкатки.
+- Описано, как GLPI выбирает плитки самообслуживания: показывается набор
+  ближайшей организации вверх по дереву, у которой плитки есть, — поэтому
+  плитка витрины, открытой для родительских организаций, видна всем, а сама
+  витрина остаётся закрытой.
 
 ## 1.0.0-rc5 — 3 сентября 2026
 

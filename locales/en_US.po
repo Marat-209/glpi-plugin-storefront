@@ -3169,3 +3169,30 @@ msgstr "signature, name in full"
 
 msgid "Получил"
 msgstr "Received by"
+
+
+# Строки, добавленные правками после приёмки в браузере.
+
+msgid "отдел не указан"
+msgstr "group not set"
+
+msgid "подразделение не указано"
+msgstr "entity not set"
+
+
+# Знак валюты: в английском интерфейсе печатается без рубля.
+
+msgid "%s ₽"
+msgstr "%s"
+
+msgid "<div class=\"fs-4 fw-bold\">%s <span class=\"fs-6 fw-normal text-muted\">₽</span>%s</div>"
+msgstr "<div class=\"fs-4 fw-bold\">%s%s</div>"
+
+
+# Настройка «во всю ширину страницы».
+
+msgid "Во всю ширину страницы"
+msgstr "Full page width"
+
+msgid "Да — витрина занимает всю ширину экрана, а не середину: на широком мониторе в ряд встают четыре-шесть карточек вместо трёх, и прокрутка становится втрое короче. Длинные тексты при этом остаются в читаемой строке, а корзина не растягивается. На планшете и телефоне вид не меняется."
+msgstr "Yes — the catalog takes the whole width of the screen instead of the middle: on a wide monitor four to six item cards fit in a row instead of three, and the page becomes three times shorter to scroll. Long texts still stay within a readable line and the cart does not stretch. On a tablet and a phone the layout is unchanged."

@@ -11,6 +11,50 @@ use Session;
  */
 final class Ui
 {
+    /**
+     * Вид витрины во всю ширину страницы.
+     *
+     * В самообслуживании GLPI держит содержимое в 1320 пикселях (класс
+     * container-xl), поэтому на широком мониторе витрина занимает середину.
+     * Настройка витрины снимает это ограничение — но только на своей
+     * странице: класс ставится на <html> текущей страницы, поэтому остальное
+     * самообслуживание не меняется.
+     *
+     * Вместе с шириной правится и сетка, иначе стало бы хуже: длинная строка
+     * текста плохо читается, корзина превратилась бы в пустое поле, а карточки
+     * остались бы по три в ряду. Правила включаются от 1400 пикселей — на
+     * планшете и телефоне вид штатный.
+     */
+    public static function wideLayoutStyle(): string
+    {
+        $css = <<<'CSS'
+@media (min-width: 1400px) {
+    html.sf-wide .page-body.container-xl,
+    html.sf-wide .header-container.container-xl { max-width: none; }
+    html.sf-wide .page-body.container-xl { padding-left: 1.75rem; padding-right: 1.75rem; }
+    /* Длинную строку не растягиваем: читать её иначе тяжело. */
+    html.sf-wide .sf-lead,
+    html.sf-wide .sf-announce { max-width: 104ch; }
+    /* Каталог шире, корзина уже: пустое поле справа никому не нужно. */
+    html.sf-wide .sf-items { flex: 0 0 auto; width: 78%; }
+    html.sf-wide .sf-cart { flex: 0 0 auto; width: 22%; }
+    /* Четыре карточки в ряду вместо трёх. */
+    html.sf-wide .sf-card { flex: 0 0 auto; width: 25%; }
+}
+@media (min-width: 1900px) {
+    html.sf-wide .sf-card { width: 20%; }
+}
+@media (min-width: 2400px) {
+    html.sf-wide .sf-items { width: 82%; }
+    html.sf-wide .sf-cart { width: 18%; }
+    html.sf-wide .sf-card { width: 16.6666%; }
+}
+CSS;
+
+        return '<style>' . $css . '</style>'
+            . '<script>document.documentElement.classList.add("sf-wide");</script>';
+    }
+
     private static function esc(?string $s): string
     {
         return htmlescape((string) $s);

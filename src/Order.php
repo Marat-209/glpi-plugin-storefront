@@ -253,6 +253,30 @@ class Order extends CommonDBTM
         return (int) $this->fields['users_id_requester'];
     }
 
+    /**
+     * Кто получатель — именем, а не подписью вида «Для себя».
+     *
+     * Нужно там, где подпись без контекста бесполезна: в накладной, которую
+     * человек подписывает, и в разрезе получателей в отчётах.
+     */
+    public function recipientName(): string
+    {
+        switch ($this->recipientType()) {
+            case self::FOR_GROUP:
+                $g = (int) $this->fields['groups_id_recipient'];
+                return $g > 0
+                    ? \Dropdown::getDropdownName('glpi_groups', $g)
+                    : __('отдел не указан', 'storefront');
+            case self::FOR_ENTITY:
+                $e = (int) $this->fields['entities_id_recipient'];
+                return $e > 0
+                    ? \Dropdown::getDropdownName('glpi_entities', $e)
+                    : __('подразделение не указано', 'storefront');
+        }
+        $u = $this->recipientId();
+        return $u > 0 ? getUserName($u) : __('не указан', 'storefront');
+    }
+
     /** Человекочитаемо: для кого заказ. */
     public function recipientLabel(): string
     {

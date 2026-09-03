@@ -240,6 +240,19 @@ class Catalog extends CommonDBTM
         return (int) ($this->fields['show_to_parents'] ?? 0) === 1;
     }
 
+    /**
+     * Занимать ли всю ширину страницы.
+     *
+     * В самообслуживании GLPI держит содержимое в 1320 пикселях. Для
+     * витрины с большим ассортиментом это втрое длиннее прокрутка, поэтому
+     * администратор витрины может снять ограничение — но только для своей
+     * витрины и только на широких экранах.
+     */
+    public function isWideLayout(): bool
+    {
+        return (int) ($this->fields['wide_layout'] ?? 0) === 1;
+    }
+
     /** Обязан ли сотрудник выбрать согласующего сам. */
     public function requiresApprover(): bool
     {
@@ -539,6 +552,7 @@ class Catalog extends CommonDBTM
         ]);
     }
 
+
     /** Убрать плитку и её привязку. */
     private static function dropHomeTile(int $tiles_id): void
     {
@@ -768,6 +782,37 @@ class Catalog extends CommonDBTM
         return $tabs;
     }
 
+    /**
+     * Значения по умолчанию для новой витрины.
+     *
+     * GLPI заполняет поля новой записи пустыми строками, а не значениями по
+     * умолчанию из схемы. Без этого метода витрина, созданная «как есть»,
+     * получалась выключенной, без плитки, без наследования вниз и с порогом
+     * должности «стажёр» — то есть не такой, как описано в руководстве.
+     */
+    public function post_getEmpty()
+    {
+        $this->fields['is_active'] = 1;
+        $this->fields['is_recursive'] = 1;
+        $this->fields['icon'] = 'ti ti-package';
+        $this->fields['illustration'] = 'request-support';
+        $this->fields['show_on_home'] = 1;
+        $this->fields['wide_layout'] = 0;
+        $this->fields['announcement_level'] = 'info';
+        $this->fields['approval_mode'] = self::APPROVE_CHAIN;
+        $this->fields['min_title_level'] = TitleLevel::L_CHIEF;
+        $this->fields['reserve_mode'] = self::RESERVE_SOFT;
+        $this->fields['show_stock'] = 1;
+        $this->fields['comment_required'] = 1;
+        $this->fields['allow_recipient'] = 1;
+        $this->fields['close_on_reject'] = 1;
+        $this->fields['waybill_show_requested'] = 1;
+        $this->fields['auto_approve_amount'] = 0;
+        $this->fields['auto_approve_lines'] = 0;
+        $this->fields['max_lines'] = 0;
+        parent::post_getEmpty();
+    }
+
     public function prepareInputForAdd($input)
     {
         return $this->prepareInput($input);
@@ -790,7 +835,8 @@ class Catalog extends CommonDBTM
         'groups_id_approver', 'groups_id_fulfil', 'itilcategories_id', 'tiles_id',
         'min_title_level', 'auto_approve_amount', 'auto_approve_lines', 'max_lines',
         'announcement_level', 'is_active', 'is_recursive', 'show_prices', 'show_stock',
-        'show_on_home', 'comment_required', 'show_to_parents', 'require_approver',
+        'show_on_home', 'wide_layout', 'comment_required', 'show_to_parents',
+        'require_approver',
         'close_on_reject', 'waybill_show_prices', 'waybill_show_requested',
     ];
 
@@ -799,6 +845,18 @@ class Catalog extends CommonDBTM
     {
         if (!is_array($input)) {
             return $input;
+        }
+        // Свои имена полей подразделения и рекурсии переносим в настоящие:
+        // одноимённые скрытые поля GLPI стоят в подвале формы и иначе
+        // затирают выбор администратора.
+        foreach (['_entities_id' => 'entities_id',
+            '_is_recursive' => 'is_recursive'] as $own => $real) {
+            if (array_key_exists($own, $input)) {
+                if (trim((string) $input[$own]) !== '') {
+                    $input[$real] = (int) $input[$own];
+                }
+                unset($input[$own]);
+            }
         }
         foreach (self::NUMERIC_FIELDS as $field) {
             if (array_key_exists($field, $input) && trim((string) $input[$field]) === '') {

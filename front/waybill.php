@@ -104,7 +104,7 @@ $dateHuman = static function (?string $raw): string {
 
 $esc = static fn(?string $v): string => htmlescape((string) $v);
 
-$recipient = $order->recipientLabel();
+$recipient = $order->recipientName();
 $requester = getUserName((int) $order->fields['users_id_requester']);
 $issuer = $catalog->waybillSignatory();
 
