@@ -1,0 +1,20 @@
+# Editors and OS junk
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build and dependency directories (the plugin ships as plain PHP)
+vendor/
+node_modules/
+dist/
+*.zip
+*.tar.gz
+
+# Logs and local scratch files
+*.log
+*.orig
+*.rej

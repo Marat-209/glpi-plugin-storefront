@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: storefront 1.0.0\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Исходные строки плагина написаны по-русски, поэтому русский каталог
+# пуст: gettext возвращает сам msgid. Файл нужен, чтобы GLPI не подставил
+# английский каталог русскоязычному пользователю.

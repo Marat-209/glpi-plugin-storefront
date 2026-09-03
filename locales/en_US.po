@@ -1,0 +1,3171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: storefront 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: manual\n"
+
+msgid ": на руках"
+msgstr ": on hand"
+
+msgid ": не удалось добавить в витрину."
+msgstr ": could not be added to the catalog."
+
+msgid ": не удалось создать номенклатуру."
+msgstr ": could not create the consumable item."
+
+msgid ": резерв"
+msgstr ": reserved"
+
+msgid ": свободно"
+msgstr ": available"
+
+msgid ". Остатки списаны."
+msgstr ". Stock has been written off."
+
+msgid "… и не длиннее, позиций"
+msgstr "… and no more items than"
+
+msgid "«%s» %s %s г."
+msgstr "%s %s %s"
+
+msgid "» не прошло"
+msgstr "” did not go through"
+
+msgid "» требует указания причины."
+msgstr "” requires a reason."
+
+msgid "%s (%s): получено %d из %d, к выдаче ещё %d"
+msgstr "%s (%s): %d of %d already received, %d more to issue"
+
+msgid "%s: нужно %d, на складе %d"
+msgstr "%s: %d needed, %d in stock"
+
+msgid "августа"
+msgstr "August"
+
+msgid "Автоматически по цепочке руководителей"
+msgstr "Automatically up the manager chain"
+
+msgid "Автосогласование до суммы"
+msgstr "Auto-approval below amount"
+
+msgid "Активна"
+msgstr "Active"
+
+msgid "Активна в витрине"
+msgstr "Active in the catalog"
+
+msgid "Аналитика"
+msgstr "Analytics"
+
+msgid "Аналитика магазина"
+msgstr "Store analytics"
+
+msgid "апреля"
+msgstr "April"
+
+msgid "артикул"
+msgstr "reference"
+
+msgid "Артикул"
+msgstr "Reference"
+
+msgid "База знаний"
+msgstr "Knowledge base"
+
+msgid "без категории"
+msgstr "no category"
+
+msgid "Без резерва"
+msgstr "No reservation"
+
+msgid "Без согласования"
+msgstr "No approval"
+
+msgid "Бронирование"
+msgstr "Reservation"
+
+msgid "Бумага"
+msgstr "Paper"
+
+msgid "Бумага А4, 500 листов"
+msgstr "A4 paper, 500 sheets"
+
+msgid "В заказе нет ни одной позиции."
+msgstr "The order has no items."
+
+msgid "В корзину"
+msgstr "Add to cart"
+
+msgid "В корзину добавлено %d — за остальным оформите отдельную заявку."
+msgstr "%d added to the cart — order the rest in a separate request."
+
+msgid "В наборе нет доступных позиций."
+msgstr "The kit has no available items."
+
+msgid "В работе"
+msgstr "In progress"
+
+msgid "В работе (все незакрытые)"
+msgstr "In progress (all open)"
+
+msgid "в работе."
+msgstr "in progress."
+
+msgid "в списках GLPI её никто не увидит своей."
+msgstr "nobody will see it as their own in GLPI lists."
+
+msgid "В упаковке"
+msgstr "Per pack"
+
+msgid "Важное предупреждение (жёлтое)"
+msgstr "Important warning (yellow)"
+
+msgid "ваша норма"
+msgstr "your allowance"
+
+msgid "Ваша оценка:"
+msgstr "Your rating:"
+
+msgid "Ведущий"
+msgstr "Lead"
+
+msgid "Вид объявления"
+msgstr "Announcement style"
+
+msgid "Вид учёта"
+msgstr "Tracking mode"
+
+msgid "Видна в дочерних подразделениях"
+msgstr "Visible in child entities"
+
+msgid "Витрина заказа не найдена."
+msgstr "The catalog of this order was not found."
+
+msgid "Витрина магазина"
+msgstr "Store catalog"
+
+msgid "Витрина не найдена, отключена или недоступна в вашем подразделении."
+msgstr "The catalog was not found, is disabled, or is unavailable in your entity."
+
+msgid "Витрина недоступна в вашем подразделении."
+msgstr "The catalog is unavailable in your entity."
+
+msgid "Витрина работает"
+msgstr "Catalog is active"
+
+msgid "Витрины магазина"
+msgstr "Store catalogs"
+
+msgid "Витрины, номенклатура, наборы и лимиты"
+msgstr "Catalogs, items, kits and limits"
+
+msgid "Внутренний магазин"
+msgstr "Internal store"
+
+msgid "Возврат в оборот резерва, который не держит ни один заказ"
+msgstr "Releases reservations that no order holds any more"
+
+msgid "Возврат: выдача по заказу №"
+msgstr "Reversal: issue for order No."
+
+msgid "Возврат: перемещение на «"
+msgstr "Reversal: transfer to “"
+
+msgid "Все"
+msgstr "All"
+
+msgid "все сотрудники"
+msgstr "all employees"
+
+msgid "Всегда группа согласующих витрины"
+msgstr "Always the catalog approver group"
+
+msgid "Всего свободно"
+msgstr "Total available"
+
+msgid "вся витрина"
+msgstr "whole catalog"
+
+msgid "Второе условие автосогласования: должны выполняться оба сразу — и сумма, и число позиций. Ноль — число позиций не проверяется."
+msgstr "The second auto-approval condition: both must hold at once — the amount and the number of items. Zero means the number of items is not checked."
+
+msgid "Выберите витрину."
+msgstr "Select a catalog."
+
+msgid "Выбирает сотрудник — при оформлении он сам указывает согласующего из списка подходящих по должности; это самый предсказуемый вариант. По цепочке руководителей — плагин берёт руководителя из карточки сотрудника и, если его должность ниже порога, идёт выше по цепочке. Только группа — заказ всегда уходит группе согласующих. Без согласования — заказ сразу попадает исполнителю."
+msgstr "Chosen by the employee — at checkout they pick an approver from those senior enough; this is the most predictable option. Up the manager chain — the plugin takes the supervisor from the employee's record and, if that job title is below the threshold, keeps going up. Group only — the order always goes to the approver group. No approval — the order goes straight to the fulfilment team."
+
+msgid "Выбранный склад не относится к этой витрине."
+msgstr "The selected warehouse does not belong to this catalog."
+
+msgid "Выдан"
+msgstr "Issued"
+
+msgid "Выдано"
+msgstr "Issued"
+
+msgid "Выдано единиц"
+msgstr "Units issued"
+
+msgid "Выдано заказов"
+msgstr "Orders issued"
+
+msgid "Выдать можно только заказ, утверждённый к выдаче."
+msgstr "Only an order approved for issue can be issued."
+
+msgid "Выдача"
+msgstr "Issue"
+
+msgid "Выдача по заказу №"
+msgstr "Issue for order No."
+
+msgid "Выдача прервана: позицию «"
+msgstr "Issue interrupted: the item “"
+
+msgid "Выключите витрину — она пропадёт у сотрудников, а учёт сохранится."
+msgstr "Disable the catalog and it disappears for employees, while the records stay."
+
+msgid "Высшее руководство"
+msgstr "Top management"
+
+msgid "Главный"
+msgstr "Chief"
+
+msgid "год"
+msgstr "year"
+
+msgid "Готов"
+msgstr "Ready"
+
+msgid "Готово к получению"
+msgstr "Ready for pickup"
+
+msgid "группа «"
+msgstr "group “"
+
+msgid "Группа согласующих — запасной вариант"
+msgstr "Approver group — fallback"
+
+msgid "Группа-исполнитель"
+msgstr "Fulfilment group"
+
+msgid "да"
+msgstr "yes"
+
+msgid "Да — без выбранного согласующего заказ не отправится. Работает в режиме «сотрудник выбирает согласующего сам»: страхует от заказов, которые уходят в группу или зависают без адресата."
+msgstr "Yes — an order will not be submitted without an approver. Works in the “employee picks the approver” mode: it prevents orders that fall through to the group or hang with no addressee."
+
+msgid "Да — без пояснения, зачем нужен заказ, отправить его нельзя. Согласующий видит комментарий в заявке, и ему не приходится переспрашивать."
+msgstr "Yes — an order cannot be submitted without explaining why it is needed. The approver sees the comment in the ticket and does not have to ask."
+
+msgid "Да — в корзине появляется выбор «Для кого заказ»: себе, сотруднику, отделу или подразделению. От выбора зависит, чей лимит расходуется."
+msgstr "Yes — the cart gets a “Who is this order for” choice: yourself, a colleague, a group or an entity. The choice decides whose allowance is spent."
+
+msgid "Да — витрина появится отдельным квадратом на главной странице сотрудника, рядом с «Сообщить о проблеме» и «Запросить услугу». Плитка создаётся и убирается автоматически при сохранении."
+msgstr "Yes — the catalog appears as its own tile on the employee home page, next to “Report an issue” and “Request a service”. The tile is created and removed automatically when the catalog is saved."
+
+msgid "Да — витрину видят и в подразделениях ниже. Наследование в GLPI идёт только вниз; чтобы витрину видели выше, включите следующую настройку."
+msgstr "Yes — child entities see the catalog too. GLPI inheritance only goes downwards; to make the catalog visible above, turn on the next setting."
+
+msgid "Да — витрину увидят сотрудники, которые работают из корневой организации, хотя сама витрина принадлежит этой. Нужно, когда сотрудник организацию не переключает. Соседние организации витрину всё равно не видят: доступ открывается только вверх по дереву."
+msgstr "Yes — employees working from the root entity will see the catalog even though it belongs to this one. Useful when employees never switch entities. Sibling entities still do not see it: access only opens upwards along the tree."
+
+msgid "Да — под каждой позицией видно «в наличии N». Помогает не заказывать то, чего нет."
+msgstr "Yes — each item shows “N in stock”. It stops people ordering what is not there."
+
+msgid "Да — при отказе согласующего к заявке прикладывается решение «Отказано в согласовании», и заявка переходит в «Решена». Закрывает её потом GLPI своим расписанием автозакрытия, а сотрудник успевает увидеть причину и при несогласии вернуть заявку в работу. Нет — заявка остаётся в работе у исполнителя, и срок решения продолжает идти."
+msgstr "Yes — when the approver refuses, a solution “Approval refused” is added to the ticket and the ticket moves to “Solved”. GLPI closes it later on its own autoclose schedule, so the employee has time to read the reason and, if they disagree, reopen the ticket. No — the ticket stays in progress with the fulfilment team and the resolution clock keeps running."
+
+msgid "Да — рядом с выданным количеством видно, сколько просили. Полезно, когда склад выдал меньше."
+msgstr "Yes — the requested quantity is printed next to the issued one. Useful when the warehouse issued less."
+
+msgid "Дата выдачи"
+msgstr "Issue date"
+
+msgid "Движение"
+msgstr "Stock movement"
+
+msgid "Движения"
+msgstr "Stock movements"
+
+
+msgid "Движения склада"
+msgstr "Stock movements"
+
+msgid "декабря"
+msgstr "December"
+
+msgid "Для кого заказ"
+msgstr "Who is this order for"
+
+msgid "Для отдела или модуля"
+msgstr "For a group or unit"
+
+msgid "Для подразделения"
+msgstr "For an entity"
+
+msgid "Для себя"
+msgstr "For myself"
+
+msgid "Для сотрудника"
+msgstr "For a colleague"
+
+msgid "Должности сотрудников не заполнены, поэтому список не сужен."
+msgstr "Employee job titles are empty, so the list has not been narrowed."
+
+msgid "должность: %s"
+msgstr "job title: %s"
+
+msgid "Доступна из родительских организаций"
+msgstr "Available from parent entities"
+
+msgid "единица"
+msgstr "unit"
+
+msgid "Единица"
+msgstr "Unit"
+
+msgid "Единица измерения"
+msgstr "Unit of measure"
+
+msgid "жёсткий"
+msgstr "hard"
+
+msgid "За один раз можно заказать не больше %d единиц позиции."
+msgstr "No more than %d units of an item can be ordered at a time."
+
+msgid "заведённой номенклатурой, если не указан артикул."
+msgstr "an existing item when no reference is given."
+
+msgid "Загрузка номенклатуры"
+msgstr "Item import"
+
+msgid "Загрузка номенклатуры списком"
+msgstr "Bulk item import"
+
+msgid "Заказ"
+msgstr "Order"
+
+msgid "Заказ магазина"
+msgstr "Store order"
+
+msgid "Заказ не найден."
+msgstr "Order not found."
+
+msgid "Заказ относится к другому подразделению — работать с ним нельзя."
+msgstr "This order belongs to another entity — you cannot work with it."
+
+msgid "Заказ по витрине «"
+msgstr "Order from the catalog “"
+
+msgid "Заказ уже отправлен."
+msgstr "The order has already been submitted."
+
+msgid "Заказ №"
+msgstr "Order No."
+
+msgid "Заказов"
+msgstr "Orders"
+
+msgid "Заказчик"
+msgstr "Requester"
+
+msgid "Заказы"
+msgstr "Orders"
+
+msgid "Заказы: очередь комплектования и выдача"
+msgstr "Orders: picking queue and issue"
+
+msgid "Заметка для администраторов"
+msgstr "Note for administrators"
+
+msgid "Запрос услуги"
+msgstr "Service request"
+
+msgid "Запрошено"
+msgstr "Requested"
+
+msgid "запятая"
+msgstr "comma"
+
+msgid "Заявки"
+msgstr "Tickets"
+
+msgid "Здание"
+msgstr "Building"
+
+msgid "Значок витрины"
+msgstr "Catalog icon"
+
+msgid "Изменение резерва по заказу №"
+msgstr "Reservation change for order No."
+
+msgid "изменить отзыв"
+msgstr "edit review"
+
+msgid "или выберите «вся витрина»."
+msgstr "or pick “whole catalog”."
+
+msgid "или дождитесь поступления — склад не тронут."
+msgstr "or wait for a delivery — the stock is untouched."
+
+msgid "иначе остаток по ней считался бы дважды."
+msgstr "otherwise its stock would be counted twice."
+
+msgid "Исправлено строк остатков: %d."
+msgstr "Stock rows fixed: %d."
+
+msgid "июля"
+msgstr "July"
+
+msgid "июня"
+msgstr "June"
+
+msgid "Как называется организация в бланке. Пусто — берётся название подразделения витрины."
+msgstr "The organisation name printed on the form. Leave empty to use the name of the catalog's entity."
+
+msgid "Как определяется согласующий"
+msgstr "How the approver is chosen"
+
+msgid "Календарь"
+msgstr "Calendar"
+
+msgid "Канцелярские товары"
+msgstr "Office supplies"
+
+msgid "Картинка плитки"
+msgstr "Tile illustration"
+
+msgid "Картриджи"
+msgstr "Cartridges"
+
+msgid "категория"
+msgstr "category"
+
+msgid "Категория"
+msgstr "Category"
+
+msgid "Категория заявки"
+msgstr "Ticket category"
+
+msgid "категория: %s"
+msgstr "category: %s"
+
+msgid "квартал"
+msgstr "quarter"
+
+msgid "Кладовщики: комплектуют заказ и выдают. Назначается исполнителем заявки, работает в разделе «Очередь заказов»."
+msgstr "Warehouse staff: they pick and issue orders. The group is assigned to the ticket and works in the “Order queue” page."
+
+msgid "Класс значка из набора Tabler Icons: ti ti-pencil, ti ti-printer, ti ti-device-laptop. Полный список — на tabler.io/icons."
+msgstr "An icon class from the Tabler Icons set: ti ti-pencil, ti ti-printer, ti ti-device-laptop. The full list is at tabler.io/icons."
+
+msgid "количественный"
+msgstr "by quantity"
+
+msgid "Количественный (расходуемое)"
+msgstr "By quantity (consumable)"
+
+msgid "Количество в наборе изменено."
+msgstr "The quantity in the kit has been changed."
+
+msgid "Количество перемещения должно быть больше нуля."
+msgstr "The transfer quantity must be greater than zero."
+
+msgid "Количество прихода должно быть больше нуля."
+msgstr "The received quantity must be greater than zero."
+
+msgid "Количество списания должно быть больше нуля."
+msgstr "The written-off quantity must be greater than zero."
+
+msgid "Комментарий (необязательно)"
+msgstr "Comment (optional)"
+
+msgid "Комментарий к заказу обязателен"
+msgstr "Order comment is mandatory"
+
+msgid "Комплектование и выдача"
+msgstr "Picking and issue"
+
+msgid "Кому принадлежит витрина: её ведут кладовщики этого подразделения. При смене подразделения вместе с витриной переедут склады, номенклатура, остатки, история движений и заказы — иначе отчёты разъедутся."
+msgstr "Who owns the catalog: the warehouse staff of this entity run it. When the entity changes, the warehouses, items, stock, movement history and orders move with the catalog — otherwise the reports would fall apart."
+
+msgid "Корзина"
+msgstr "Cart"
+
+msgid "Корзина пуста."
+msgstr "The cart is empty."
+
+msgid "коротко: чем понравилось"
+msgstr "briefly: what you liked"
+
+msgid "Корректировка"
+msgstr "Stock count"
+
+msgid "Красным помечают ограничения приёма — их читают внимательнее, но если красным написано всё, читать перестают."
+msgstr "Red marks restrictions — people read those more carefully, but if everything is red they stop reading."
+
+msgid "Кто выдаёт"
+msgstr "Who issues"
+
+msgid "Кто выдаёт: должность"
+msgstr "Issued by: job title"
+
+msgid "Кто согласует заказ"
+msgstr "Who approves the order"
+
+msgid "Куда уходит заказ, если согласующий не определился: сотрудник его не выбрал или руководитель в карточке не заполнен. Заполните обязательно — иначе такие заказы зависнут без адресата."
+msgstr "Where an order goes when no approver was resolved: the employee did not pick one, or the supervisor field is empty. Fill this in — otherwise such orders hang with no addressee."
+
+msgid "Лимит выдачи"
+msgstr "Issue limit"
+
+msgid "Лимит добавлен."
+msgstr "Limit added."
+
+msgid "Лимиты выдачи"
+msgstr "Issue limits"
+
+msgid "личные заказы"
+msgstr "personal orders"
+
+msgid "Магазин"
+msgstr "Store"
+
+msgid "Максимум должен быть больше нуля."
+msgstr "The maximum must be greater than zero."
+
+msgid "Максимум позиций в одном заказе"
+msgstr "Maximum items per order"
+
+msgid "марта"
+msgstr "March"
+
+msgid "мая"
+msgstr "May"
+
+msgid "Мелочь вроде пары ручек не стоит рабочего времени руководителя. Такой заказ сразу уходит на склад с отметкой «согласован автоматически». Ноль — автосогласования нет, согласуется всё."
+msgstr "Small change such as a couple of pens is not worth a manager's time. Such an order goes straight to the warehouse marked “approved automatically”. Zero disables auto-approval, so everything is approved by a person."
+
+msgid "Место получения"
+msgstr "Pickup place"
+
+msgid "месяц"
+msgstr "month"
+
+msgid "Младший"
+msgstr "Junior"
+
+msgid "мягкий"
+msgstr "soft"
+
+msgid "Мягкий — согласованное количество помечается как обещанное и вычитается из «свободно», но физически остаётся на складе. Без резерва — остаток уменьшается только в момент выдачи, и один и тот же товар могут пообещать дважды."
+msgstr "Soft — the approved quantity is marked as promised and subtracted from “available”, while physically staying in the warehouse. No reservation — stock drops only at the moment of issue, and the same goods can be promised twice."
+
+msgid "Мягкий резерв с момента взятия в работу"
+msgstr "Soft reservation once work starts"
+
+msgid "на выбранный склад и попадает в историю движений."
+msgstr "to the selected warehouse and is recorded in the movement history."
+
+msgid "На складе отправления свободно только %d — переместить %d нельзя."
+msgstr "Only %d available in the source warehouse — %d cannot be transferred."
+
+msgid "на согласование конкретному человеку. Корзина сохранена."
+msgstr "for approval by a specific person. The cart has been kept."
+
+msgid "На согласовании"
+msgstr "Awaiting approval"
+
+msgid "Набор"
+msgstr "Kit"
+
+msgid "Набор «%s» добавлен в корзину: позиций %d.%s"
+msgstr "The kit “%s” has been added to the cart: %d items.%s"
+
+msgid "Набор или позиция не найдены."
+msgstr "The kit or the item was not found."
+
+msgid "Набор не найден."
+msgstr "Kit not found."
+
+msgid "Набор отключён."
+msgstr "The kit is disabled."
+
+msgid "Набор создан. Теперь добавьте в него позиции."
+msgstr "The kit has been created. Now add items to it."
+
+msgid "Набор удалён."
+msgstr "The kit has been deleted."
+
+msgid "Наборы"
+msgstr "Kits"
+
+msgid "Название витрины"
+msgstr "Catalog name"
+
+
+msgid "Название документа"
+msgstr "Document title"
+
+msgid "Название и вид"
+msgstr "Name and appearance"
+
+msgid "наименование"
+msgstr "name"
+
+msgid "Наименование"
+msgstr "Name"
+
+msgid "Накладная на выдачу материальных ценностей"
+msgstr "Goods issue note"
+
+msgid "Например: «Претензии по количеству и качеству принимаются в день выдачи»."
+msgstr "For example: “Claims about quantity and quality are accepted on the day of issue”."
+
+msgid "Например: закончились ручки в отделе кадров"
+msgstr "For example: HR has run out of pens"
+
+msgid "Не выбрано, на кого действует лимит."
+msgstr "You have not selected whom the limit applies to."
+
+msgid "не поддерживается."
+msgstr "is not supported."
+
+msgid "не требуется — заказ в пределах порога рутинных заказов витрины"
+msgstr "not required — the order is within the catalog's routine threshold"
+
+msgid "Не удалось создать запрос на согласование."
+msgstr "Could not create the approval request."
+
+msgid "Не удалось создать заявку по заказу."
+msgstr "Could not create a ticket for the order."
+
+msgid "Не удалось создать номенклатуру."
+msgstr "Could not create the consumable item."
+
+msgid "не указан"
+msgstr "not set"
+
+msgid "не указано"
+msgstr "not set"
+
+msgid "Недостаточно прав для движений по складу."
+msgstr "Not enough rights for stock movements."
+
+msgid "Недостаточно прав для работы с заказами."
+msgstr "Not enough rights to work with orders."
+
+msgid "недоступны."
+msgstr "are unavailable."
+
+msgid "Нельзя утвердить больше запрошенного по позиции «"
+msgstr "You cannot approve more than requested for the item “"
+
+msgid "нет"
+msgstr "no"
+
+msgid "Нет — в накладной только количества. Выдача бесплатная, и цены в бланке для сотрудника лишние."
+msgstr "No — the note shows quantities only. The goods are free of charge, so prices on the employee's form are unnecessary."
+
+msgid "Нет — витрина выглядит как выдача, а не как магазин: сотрудник видит только количества и остатки. Цены при этом продолжают считаться и видны исполнителю, в накладной и в отчётах. Отдельные позиции можно пометить платными на вкладке «Позиции» — у них цена показывается всегда, даже при выключенной настройке."
+msgstr "No — the catalog looks like an issue desk rather than a shop: the employee only sees quantities and stock. Prices are still calculated and remain visible to the fulfilment team, on the note and in reports. Individual items can be marked as paid on the “Items” tab — their price is always shown, even when this setting is off."
+
+msgid "Нет — витрина исчезает у сотрудников, но все настройки, остатки и прошлые заказы сохраняются."
+msgstr "No — the catalog disappears for employees, but all settings, stock and past orders are kept."
+
+msgid "Ни одна позиция не имеет утверждённого количества."
+msgstr "No item has an approved quantity."
+
+msgid "Ни одной позиции того заказа сейчас нет в витрине."
+msgstr "None of that order's items are in the catalog right now."
+
+msgid "Ни файл не приложен, ни текст не вставлен."
+msgstr "Neither a file was attached nor text pasted."
+
+msgid "ниже порога"
+msgstr "below threshold"
+
+msgid "Ниже этого остатка позиция попадает в «ниже порога»."
+msgstr "Below this level the item is listed as “below threshold”."
+
+msgid "но согласование нужно назначить вручную."
+msgstr "but approval has to be assigned manually."
+
+msgid "новая не создаётся."
+msgstr "a new one is not created."
+
+msgid "Ноль — не ограничивать. Ограничение не про количество штук, а про число разных наименований в корзине."
+msgstr "Zero means no limit. This is not about the number of units, but about how many different items the cart may hold."
+
+msgid "Номенклатура уже есть в GLPI."
+msgstr "The item already exists in GLPI."
+
+msgid "норма"
+msgstr "allowance"
+
+msgid "норма получателя"
+msgstr "recipient's allowance"
+
+msgid "Ноутбук"
+msgstr "Laptop"
+
+msgid "ноября"
+msgstr "November"
+
+msgid "Нужно докупить"
+msgstr "To purchase"
+
+msgid "обновить"
+msgstr "update"
+
+msgid "Обращение в поддержку"
+msgstr "Support request"
+
+msgid "общая норма витрины"
+msgstr "shared catalog allowance"
+
+msgid "общая норма должности «%s»"
+msgstr "shared allowance of the job title “%s”"
+
+msgid "общая норма отдела «%s»"
+msgstr "shared allowance of the group “%s”"
+
+msgid "общая норма подразделения «%s»"
+msgstr "shared allowance of the entity “%s”"
+
+msgid "Объявление над каталогом"
+msgstr "Announcement above the catalog"
+
+msgid "Обычное объявление (синее)"
+msgstr "Regular announcement (blue)"
+
+msgid "Ограничение приёма (красное)"
+msgstr "Intake restriction (red)"
+
+msgid "одна на витрину"
+msgstr "one per catalog"
+
+msgid "одна на должность"
+msgstr "one per job title"
+
+msgid "одна на отдел"
+msgstr "one per group"
+
+msgid "одна на подразделение"
+msgstr "one per entity"
+
+msgid "Одна-две строки под названием: что здесь заказывают и чего ждать. Например «Заказ обрабатывается складом канцелярии. Крупные заказы согласует руководитель»."
+msgstr "One or two lines under the name: what is ordered here and what to expect. For example “Orders are handled by the office supplies store. Large orders are approved by a manager”."
+
+msgid "ожидает ответа"
+msgstr "awaiting answer"
+
+msgid "октября"
+msgstr "October"
+
+msgid "она будет создана."
+msgstr "it will be created."
+
+msgid "Описание"
+msgstr "Description"
+
+msgid "Описание для сотрудника"
+msgstr "Description for the employee"
+
+msgid "Оповещение об остатках ниже порога и расчёт потребности к закупке"
+msgstr "Alerts about stock below threshold and purchase needs calculation"
+
+msgid "определить самому"
+msgstr "decide myself"
+
+msgid "организации и ниже. Обычно витрину размещают в корневой."
+msgstr "entity and below. A catalog usually lives in the root entity."
+
+msgid "Организация в шапке"
+msgstr "Organisation in the header"
+
+msgid "Остатки"
+msgstr "Stock"
+
+msgid "Остатки ниже порога: расчёт потребности к закупке"
+msgstr "Stock below threshold: purchase needs calculation"
+
+msgid "остаток"
+msgstr "stock"
+
+msgid "Остаток"
+msgstr "Stock"
+
+msgid "Ответственный склада"
+msgstr "Warehouse owner"
+
+msgid "отдел: %s"
+msgstr "group: %s"
+
+msgid "отказано"
+msgstr "refused"
+
+msgid "Отклонена руководителем"
+msgstr "Refused by the manager"
+
+msgid "Отменена"
+msgstr "Cancelled"
+
+msgid "Отметить готовым можно только заказ, утверждённый к выдаче."
+msgstr "Only an order approved for issue can be marked as ready."
+
+msgid "Отправить можно, потребуется обоснование."
+msgstr "You can submit it, but a justification will be required."
+
+msgid "Отправить нельзя."
+msgstr "Submitting is not possible."
+
+msgid "отправляется на согласование конкретному человеку."
+msgstr "is sent for approval to a specific person."
+
+msgid "Отчёты"
+msgstr "Reports"
+
+msgid "Отчёты магазина"
+msgstr "Store reports"
+
+msgid "Оформлен"
+msgstr "Submitted"
+
+msgid "Оценить можно только то, что вы получали."
+msgstr "You can only rate what you have received."
+
+msgid "Оценить:"
+msgstr "Rate:"
+
+msgid "Оценка"
+msgstr "Rating"
+
+msgid "Оценки"
+msgstr "Ratings"
+
+msgid "Очередь заказов"
+msgstr "Order queue"
+
+msgid "Очистка брошенных корзин"
+msgstr "Abandoned cart cleanup"
+
+msgid "Очистка брошенных корзин старше 30 дней"
+msgstr "Cleanup of carts abandoned more than 30 days ago"
+
+msgid "ошибка"
+msgstr "error"
+
+msgid "Переводить заявку в «Решена» при отказе"
+msgstr "Move the ticket to “Solved” on refusal"
+
+msgid "Передано на другой склад"
+msgstr "Transferred to another warehouse"
+
+msgid "Передано на склад «"
+msgstr "Transferred to the warehouse “"
+
+msgid "перезаписан автоматической разметкой."
+msgstr "overwritten by the automatic pass."
+
+msgid "Периферия"
+msgstr "Peripheral"
+
+msgid "Печатается у подписи выдающего. Например «Кладовщик хозяйственного отдела». Пусто — строка остаётся для заполнения от руки."
+msgstr "Printed next to the issuer's signature. For example “Facilities storekeeper”. Leave empty to keep the line blank for handwriting."
+
+msgid "Печатать графу «заказано»"
+msgstr "Print the “requested” column"
+
+msgid "Печатать цены и сумму"
+msgstr "Print prices and total"
+
+msgid "Печатная накладная"
+msgstr "Printed issue note"
+
+msgid "Плитка на главной странице самообслуживания"
+msgstr "Tile on the self-service home page"
+
+msgid "по категории"
+msgstr "by category"
+
+msgid "по названию"
+msgstr "by name"
+
+msgid "по отделу"
+msgstr "by group"
+
+msgid "по подразделению"
+msgstr "by entity"
+
+msgid "по позиции"
+msgstr "by item"
+
+msgid "по сотруднику"
+msgstr "by employee"
+
+
+msgid "Подразделение витрины"
+msgstr "Catalog entity"
+
+msgid "Подразделение заявки"
+msgstr "Ticket entity"
+
+msgid "подразделение: %s"
+msgstr "entity: %s"
+
+msgid "Позиции витрины"
+msgstr "Catalog items"
+
+msgid "Позиций ниже порога: %d. Суммарная потребность к закупке: %d ед."
+msgstr "Items below threshold: %d. Total purchase need: %d units."
+
+msgid "Позиция"
+msgstr "Item"
+
+msgid "позиция #"
+msgstr "item #"
+
+msgid "Позиция #"
+msgstr "Item #"
+
+msgid "Позиция %d на складе %d: в остатках зарезервировано %d, заказы держат %d."
+msgstr "Item %d in warehouse %d: %d reserved in stock, %d held by orders."
+
+msgid "Позиция витрины"
+msgstr "Catalog item"
+
+msgid "Позиция добавлена в витрину."
+msgstr "The item has been added to the catalog."
+
+msgid "Позиция добавлена в набор."
+msgstr "The item has been added to the kit."
+
+msgid "Позиция заведена и добавлена в витрину."
+msgstr "The item has been created and added to the catalog."
+
+msgid "Позиция из другой витрины: набор выдаётся с одного склада."
+msgstr "The item belongs to another catalog: a kit is issued from a single warehouse."
+
+msgid "Позиция не добавлена."
+msgstr "The item was not added."
+
+msgid "Позиция убрана из набора."
+msgstr "The item has been removed from the kit."
+
+msgid "позиция удалена"
+msgstr "item deleted"
+
+msgid "Позиция уже в витрине — обновим цену и единицу."
+msgstr "The item is already in the catalog — the price and unit will be updated."
+
+msgid "Показаны сотрудники с должностью не ниже требуемой витриной."
+msgstr "Only employees whose job title meets the catalog threshold are listed."
+
+msgid "Показывается заметной полосой над карточками товара — там, где сотрудник его точно прочитает. Сюда пишут правила приёма заявок, список обслуживаемых объектов, места выдачи, временные ограничения. Пустое поле — полосы нет."
+msgstr "Shown as a prominent banner above the item cards, where the employee will certainly read it. Use it for intake rules, the list of served locations, pickup places and temporary restrictions. An empty field means no banner."
+
+msgid "Показывать остаток на складе"
+msgstr "Show stock level"
+
+msgid "Показывать цены сотруднику"
+msgstr "Show prices to the employee"
+
+msgid "Получатель"
+msgstr "Recipient"
+
+msgid "получено %d из %d, в заказе ещё %d."
+msgstr "%d of %d received, %d more in this order."
+
+msgid "порог"
+msgstr "threshold"
+
+msgid "Порог должности"
+msgstr "Job title threshold"
+
+msgid "Порог оповещения"
+msgstr "Alert threshold"
+
+msgid "Пояснение видит согласующий и кладовщик — без него заказ не отправить."
+msgstr "The approver and the storekeeper see this note — without it the order cannot be submitted."
+
+msgid "Пояснение видит согласующий и кладовщик."
+msgstr "The approver and the storekeeper see this note."
+
+msgid "Права магазина сохранены."
+msgstr "Store rights have been saved."
+
+msgid "Превышен жёсткий лимит"
+msgstr "Hard limit exceeded"
+
+msgid "Превышен лимит"
+msgstr "Limit exceeded"
+
+msgid "Принтер"
+msgstr "Printer"
+
+msgid "Принято с другого склада"
+msgstr "Received from another warehouse"
+
+msgid "Принято со склада «"
+msgstr "Received from the warehouse “"
+
+msgid "Приход"
+msgstr "Receipt"
+
+msgid "проводок склада %d, заказов %d."
+msgstr "%d stock movements, %d orders."
+
+msgid "пропустить"
+msgstr "skip"
+
+msgid "Просмотр"
+msgstr "Read"
+
+msgid "Пусто — «Накладная на выдачу материальных ценностей»."
+msgstr "Empty means “Goods issue note”."
+
+msgid "Пустое наименование."
+msgstr "Empty name."
+
+msgid "Рабочее место"
+msgstr "Workplace"
+
+msgid "Разметка завершена. Создано: %d, обновлено: %d, пропущено ручных: %d,"
+msgstr "Pass finished. Created: %d, updated: %d, manual entries skipped: %d,"
+
+msgid "Разрешение выдано: набор снова доступен этому сотруднику один раз."
+msgstr "Permission granted: the kit is available to this employee once again."
+
+msgid "Разрешение на повторную выдачу"
+msgstr "Repeat issue permission"
+
+msgid "Разрешения на повторную выдачу"
+msgstr "Repeat issue permissions"
+
+msgid "Разрешить заказ не для себя"
+msgstr "Allow ordering for others"
+
+msgid "Расписывается в накладной"
+msgstr "Signs the issue note"
+
+msgid "Режим согласования"
+msgstr "Approval mode"
+
+msgid "Резерв"
+msgstr "Reservation"
+
+msgid "Резерв под заказ №"
+msgstr "Reservation for order No."
+
+msgid "Резервировать остаток под согласованный заказ"
+msgstr "Reserve stock for an approved order"
+
+msgid "Руководитель"
+msgstr "Manager"
+
+msgid "Руководитель заказчика"
+msgstr "The requester's manager"
+
+msgid "Ручка шариковая синяя"
+msgstr "Blue ballpoint pen"
+
+msgid "С этой категорией создаётся заявка по каждому заказу. Через неё работают привычные правила маршрутизации, SLA и отчёты GLPI."
+msgstr "Every order creates a ticket in this category. It is what makes the usual GLPI routing rules, SLAs and reports work."
+
+msgid "Сверка резерва складов с составом заказов"
+msgstr "Reconciliation of warehouse reservations against orders"
+
+msgid "Связанная заявка №"
+msgstr "Linked ticket No."
+
+msgid "сентября"
+msgstr "September"
+
+msgid "Скачайте образец и приведите шапку к нему."
+msgstr "Download the sample and make your header match it."
+
+msgid "Склад"
+msgstr "Warehouse"
+
+msgid "Склад #"
+msgstr "Warehouse #"
+
+msgid "склад витрины"
+msgstr "catalog warehouse"
+
+msgid "Склад добавлен."
+msgstr "The warehouse has been added."
+
+msgid "Склад не найден."
+msgstr "Warehouse not found."
+
+msgid "склад не тронут."
+msgstr "the stock is untouched."
+
+msgid "Склад отправления и склад получения совпадают."
+msgstr "The source and the destination warehouse are the same."
+
+msgid "Склад: остатки, приход, списание, перемещение"
+msgstr "Warehouse: stock, receipts, write-offs, transfers"
+
+msgid "Склады"
+msgstr "Warehouses"
+
+msgid "Служебное"
+msgstr "Internal"
+
+msgid "сначала дешёвые"
+msgstr "cheapest first"
+
+msgid "сначала дорогие"
+msgstr "most expensive first"
+
+msgid "сначала то, чего много"
+msgstr "most in stock first"
+
+msgid "снова — обратитесь к администратору витрины за разрешением."
+msgstr "again — ask the catalog administrator for permission."
+
+msgid "Снятие резерва"
+msgstr "Reservation release"
+
+msgid "Собирается"
+msgstr "Being picked"
+
+msgid "Согласован"
+msgstr "Approved"
+
+msgid "Согласование"
+msgstr "Approval"
+
+msgid "Согласование заказа №"
+msgstr "Approval of order No."
+
+msgid "Согласование не требуется."
+msgstr "No approval required."
+
+msgid "согласовано"
+msgstr "approved"
+
+msgid "Согласовывать автоматически заказы дешевле, ₽"
+msgstr "Auto-approve orders cheaper than"
+
+msgid "Согласует"
+msgstr "Approves"
+
+msgid "Согласующий не ниже должности"
+msgstr "Approver at least of job title"
+
+msgid "Согласующий обязателен"
+msgstr "Approver is mandatory"
+
+msgid "создать"
+msgstr "create"
+
+msgid "Состав заказа №%d добавлен в корзину: позиций %d.%s"
+msgstr "The contents of order No. %d have been added to the cart: %d items.%s"
+
+msgid "Состояние"
+msgstr "Status"
+
+msgid "Сотрудник выбирает согласующего сам"
+msgstr "The employee picks the approver"
+
+msgid "сотрудник: %s"
+msgstr "employee: %s"
+
+msgid "Сотрудникам не показывается."
+msgstr "Not shown to employees."
+
+msgid "Специалист"
+msgstr "Specialist"
+
+msgid "Списание"
+msgstr "Write-off"
+
+msgid "Списание без основания не проводится: укажите причину."
+msgstr "A write-off without grounds is not recorded: state the reason."
+
+msgid "Срок выдачи, медиана"
+msgstr "Median time to issue"
+
+msgid "Стажёр"
+msgstr "Intern"
+
+msgid "Старший"
+msgstr "Senior"
+
+msgid "Стоимость выданного"
+msgstr "Value issued"
+
+msgid "Строка заказа"
+msgstr "Order line"
+
+msgid "Строка корзины"
+msgstr "Cart line"
+
+msgid "Строка набора"
+msgstr "Kit line"
+
+msgid "Строки заказа"
+msgstr "Order lines"
+
+msgid "Строки набора"
+msgstr "Kit lines"
+
+msgid "Ступень определяется по названию должности в карточке сотрудника: «главный специалист» — Главный, «начальник отдела» — Руководитель. Разбор проверяется на вкладке «Должности» слева в меню магазина, там же ступень можно поправить вручную. «Не ограничивать» снимает фильтр."
+msgstr "The grade is derived from the job title in the employee record: “chief specialist” becomes Chief, “head of department” becomes Manager. You can check the parsing on the “Job titles” page in the store menu and correct any grade by hand there. “No limit” removes the filter."
+
+msgid "Сумма"
+msgstr "Amount"
+
+msgid "сформируется автоматически."
+msgstr "will be generated automatically."
+
+msgid "табуляция"
+msgstr "tab"
+
+msgid "Так витрину увидит сотрудник: заголовок страницы заказа и подпись на плитке. Например «Канцелярия» или «Расходники для печати»."
+msgstr "This is how the employee sees the catalog: the heading of the order page and the caption on the tile. For example “Office supplies” or “Printing consumables”."
+
+msgid "такие заказы зависнут без согласующего."
+msgstr "such orders will hang with no approver."
+
+msgid "Текст объявления"
+msgstr "Announcement text"
+
+msgid "Текст под подписями"
+msgstr "Text below the signatures"
+
+msgid "Телефон"
+msgstr "Phone"
+
+msgid "Тип или идентификатор указаны неверно."
+msgstr "The type or the identifier is wrong."
+
+msgid "Тип номенклатуры"
+msgstr "Item type"
+
+msgid "точка с запятой"
+msgstr "semicolon"
+
+msgid "У витрины нет склада выдачи — обратитесь к администратору."
+msgstr "The catalog has no issuing warehouse — contact the administrator."
+
+msgid "У заказа не указан склад выдачи."
+msgstr "The order has no issuing warehouse."
+
+msgid "у каждого своя"
+msgstr "one per recipient"
+
+msgid "У сотрудника уже есть непогашенное разрешение на этот набор."
+msgstr "The employee already has an unused permission for this kit."
+
+msgid "Уберите её и отправьте заказ заново."
+msgstr "Remove it and submit the order again."
+
+msgid "Удалено строк брошенных корзин: %d"
+msgstr "Abandoned cart lines removed: %d"
+
+msgid "Уменьшение количества по позиции «"
+msgstr "Quantity reduced for the item “"
+
+msgid "упак"
+msgstr "pack"
+
+msgid "Уровень %d"
+msgstr "Level %d"
+
+msgid "Уровень должности"
+msgstr "Job title level"
+
+msgid "Уровни должностей"
+msgstr "Job title levels"
+
+msgid "Утверждать количества можно только у заказа в работе."
+msgstr "Quantities can be approved only for an order in progress."
+
+msgid "Утверждена к выдаче"
+msgstr "Approved for issue"
+
+msgid "Утверждено"
+msgstr "Approved"
+
+msgid "Уточнение"
+msgstr "Reason"
+
+msgid "Учёт"
+msgstr "Tracking"
+
+msgid "Файл пуст."
+msgstr "The file is empty."
+
+msgid "февраля"
+msgstr "February"
+
+msgid "Финансы"
+msgstr "Finance"
+
+msgid "Целевой запас"
+msgstr "Target stock"
+
+msgid "Целевой запас: до него считается потребность к закупке."
+msgstr "Target stock: the purchase need is calculated up to this level."
+
+msgid "цель"
+msgstr "target"
+
+msgid "цена"
+msgstr "price"
+
+msgid "Цена"
+msgstr "Price"
+
+msgid "Цена за единицу. Можно писать через запятую: 430,00."
+msgstr "Price per unit. A comma is accepted: 430,00."
+
+msgid "Черновик"
+msgstr "Draft"
+
+msgid "Что видит и что может сотрудник"
+msgstr "What the employee sees and can do"
+
+msgid "шт"
+msgstr "pcs"
+
+msgid "Штатная иллюстрация GLPI, которой рисуется квадрат на главной странице."
+msgstr "A stock GLPI illustration used to draw the tile on the home page."
+
+msgid "Штуки, упаковки, пачки. По умолчанию «шт»."
+msgstr "Pieces, packs, boxes. The default is “pcs”."
+
+msgid "экземплярный"
+msgstr "by instance"
+
+msgid "Экземплярный (инвентарное)"
+msgstr "By instance (asset)"
+
+msgid "Эта позиция не из этой витрины."
+msgstr "This item does not belong to this catalog."
+
+msgid "Это подразделение вам недоступно."
+msgstr "This entity is not available to you."
+
+msgid "Это поле обязательно."
+msgstr "This field is required."
+
+msgid "Эту позицию нельзя добавить в корзину этой витрины."
+msgstr "This item cannot be added to this catalog's cart."
+
+msgid "я сам"
+msgstr "myself"
+
+msgid "января"
+msgstr "January"
+
+
+# Строки страниц: подписи, кнопки, таблицы и сообщения,
+# собираемые вместе с разметкой.
+
+msgid " — изменить"
+msgstr " — change"
+
+msgid " (платно)"
+msgstr " (chargeable)"
+
+msgid " <span class=\"badge bg-blue-lt\">один раз на человека</span>"
+msgstr " <span class=\"badge bg-blue-lt\">once per person</span>"
+
+msgid " <span class=\"badge bg-green-lt\">согласует</span>"
+msgstr " <span class=\"badge bg-green-lt\">approves</span>"
+
+msgid " <span class=\"badge bg-orange-lt align-middle\">платно</span>"
+msgstr " <span class=\"badge bg-orange-lt align-middle\">chargeable</span>"
+
+msgid " <span class=\"badge bg-secondary-lt\">нет в каталоге</span>"
+msgstr " <span class=\"badge bg-secondary-lt\">not in the catalog</span>"
+
+msgid " <span class=\"text-danger\" title=\"Обязательно\">*</span>"
+msgstr " <span class=\"text-danger\" title=\"Required\">*</span>"
+
+msgid " <span class=\"text-muted fw-normal\">— позиций "
+msgstr " <span class=\"text-muted fw-normal\">— items "
+
+msgid " <span class=\"text-muted small\" title=\"На других складах витрины\">"
+msgstr " <span class=\"text-muted small\" title=\"In the catalog's other warehouses\">"
+
+msgid " <span class=\"text-muted\">(и ещё %d удалённых "
+msgstr " <span class=\"text-muted\">(and %d more deleted "
+
+msgid " витрины. Передан исполнителю."
+msgstr " catalog. Passed to the fulfilment team."
+
+msgid " выдан, накладная "
+msgstr " has been issued, note "
+
+msgid " за ед."
+msgstr " per unit"
+
+msgid " из "
+msgstr " of "
+
+msgid " Изменений нет."
+msgstr " Nothing was changed."
+
+msgid " Комментарий: "
+msgstr " Comment: "
+
+msgid " Отзыв сохранён."
+msgstr " The review has been saved."
+
+msgid " отправлен на согласование."
+msgstr " has been sent for approval."
+
+msgid " передан исполнителю: витрина работает без согласования."
+msgstr " was passed to the fulfilment team: the catalog works without approval."
+
+msgid " по витрине «"
+msgstr " for the catalog “"
+
+msgid " По умолчанию предложен ваш руководитель."
+msgstr " Your manager is offered by default."
+
+msgid " прервана"
+msgstr " was interrupted"
+
+msgid " Причина: "
+msgstr " Reason: "
+
+msgid " Пропущено недоступных сейчас: "
+msgstr " Currently unavailable, skipped: "
+
+msgid " Пропущено недоступных: "
+msgstr " Unavailable, skipped: "
+
+msgid " с номером "
+msgstr " with number "
+
+msgid " согласован автоматически: он в пределах порога рутинных заказов"
+msgstr " was approved automatically: it is within the routine order threshold of the"
+
+msgid " убрано по удалённым должностям: %d."
+msgstr " removed for deleted job titles: %d."
+
+msgid " удалена "
+msgstr " was deleted on "
+
+msgid " уже выдана по другому заказу. "
+msgstr " has already been issued for another order. "
+
+msgid " Уточнение: "
+msgstr " Note: "
+
+msgid " ч"
+msgstr " h"
+
+msgid " Часть позиций изменена."
+msgstr " Some items were changed."
+
+msgid " href=\"%s/front/catalog.php\">Список витрин</a></div>"
+msgstr " href=\"%s/front/catalog.php\">Catalog list</a></div>"
+
+msgid ", списывается "
+msgstr ", writing off "
+
+msgid "?from=%s&to=%s&catalog=%d&groupby=%s&csv=1\">Выгрузить CSV</a></div>"
+msgstr "?from=%s&to=%s&catalog=%d&groupby=%s&csv=1\">Export CSV</a></div>"
+
+msgid ". Уменьшите количество к выдаче "
+msgstr ". Reduce the quantity to issue "
+
+msgid ". Уменьшите количество к выдаче или дождитесь нового периода — "
+msgstr ". Reduce the quantity to issue or wait for the new period — "
+
+msgid "«ведущий» — пятьдесят, «старший» — сорок, «младший» — двадцать, стажёр — десять, "
+msgstr "“lead” is fifty, “senior” is forty, “junior” is twenty, an intern is ten, "
+
+msgid "«на сотрудника» к нему не применяются. Один и тот же расход не может "
+msgstr "“per employee” do not apply to it. The same consumption cannot "
+
+msgid "» витрин нет.</div>"
+msgstr "” has no catalogs.</div>"
+
+msgid "» не удалось "
+msgstr "” could not be "
+
+msgid "»: запрошено "
+msgstr "”: requested "
+
+msgid "». Позиций: "
+msgstr "”. Items: "
+
+msgid "&state=%s&open=%d\">Открыть</a></td></tr>"
+msgstr "&state=%s&open=%d\">Open</a></td></tr>"
+
+msgid "+%d на других складах</span>"
+msgstr "+%d in other warehouses</span>"
+
+msgid "</strong> по витрине «"
+msgstr "</strong> for the catalog “"
+
+msgid "<a class=\"btn btn-sm btn-link p-0\" href=\"%s\">Сбросить фильтр</a></div>"
+msgstr "<a class=\"btn btn-sm btn-link p-0\" href=\"%s\">Reset the filter</a></div>"
+
+msgid "<a href=\"%s\" class=\"btn btn-sm btn-outline-secondary\">Все витрины</a></div></div>"
+msgstr "<a href=\"%s\" class=\"btn btn-sm btn-outline-secondary\">All catalogs</a></div></div>"
+
+msgid "<button class=\"btn btn-sm btn-outline-primary\" name=\"check\" value=\"1\">Проверить</button>"
+msgstr "<button class=\"btn btn-sm btn-outline-primary\" name=\"check\" value=\"1\">Check</button>"
+
+msgid "<button class=\"btn btn-sm btn-outline-secondary\">Найти</button></form>"
+msgstr "<button class=\"btn btn-sm btn-outline-secondary\">Search</button></form>"
+
+msgid "<button class=\"btn btn-sm btn-primary flex-fill\">Показать</button>"
+msgstr "<button class=\"btn btn-sm btn-primary flex-fill\">Show</button>"
+
+msgid "<button class=\"btn btn-sm btn-primary\" name=\"apply\" value=\"1\">Импортировать</button>"
+msgstr "<button class=\"btn btn-sm btn-primary\" name=\"apply\" value=\"1\">Import</button>"
+
+msgid "<button class=\"btn btn-sm btn-primary\" name=\"receive\" value=\"1\">Оприходовать</button>"
+msgstr "<button class=\"btn btn-sm btn-primary\" name=\"receive\" value=\"1\">Receive</button>"
+
+msgid "<div class=\"alert %s mt-2 mb-0 py-2 small\">%s «%s»: %s — за период уже "
+msgstr "<div class=\"alert %s mt-2 mb-0 py-2 small\">%s “%s”: %s — in this period "
+
+msgid "<div class=\"alert alert-info mt-3\">Заказ согласован автоматически: "
+msgstr "<div class=\"alert alert-info mt-3\">The order was approved automatically: "
+
+msgid "<div class=\"alert alert-info py-2 small\">Увеличить сверх запрошенного нельзя. "
+msgstr "<div class=\"alert alert-info py-2 small\">You cannot increase beyond what was requested. "
+
+msgid "<div class=\"alert alert-info\">Витрины ещё не настроены. "
+msgstr "<div class=\"alert alert-info\">No catalogs have been set up yet. "
+
+msgid "<div class=\"alert alert-info\">Выберите витрину, чтобы увидеть остатки.</div>"
+msgstr "<div class=\"alert alert-info\">Select a catalog to see the stock.</div>"
+
+msgid "<div class=\"alert alert-info\">Наборов пока нет. Создайте набор формой "
+msgstr "<div class=\"alert alert-info\">There are no kits yet. Create one with the form "
+
+msgid "<div class=\"alert alert-info\">Это только проверка — ничего не изменено. "
+msgstr "<div class=\"alert alert-info\">This was only a check — nothing has been changed. "
+
+msgid "<div class=\"alert alert-success\"><b>Импорт выполнен.</b> Создано позиций: %d, "
+msgstr "<div class=\"alert alert-success\"><b>Import finished.</b> Items created: %d, "
+
+msgid "<div class=\"alert alert-warning mt-2 mb-0\">В витрине нет активных "
+msgstr "<div class=\"alert alert-warning mt-2 mb-0\">The catalog has no active "
+
+msgid "<div class=\"alert alert-warning mt-3\">Заказ не найден "
+msgstr "<div class=\"alert alert-warning mt-3\">The order was not found "
+
+msgid "<div class=\"alert alert-warning mt-3\">Согласующий не определён автоматически: "
+msgstr "<div class=\"alert alert-warning mt-3\">The approver was not determined automatically: "
+
+msgid "<div class=\"alert alert-warning\">У витрины нет складов. "
+msgstr "<div class=\"alert alert-warning\">The catalog has no warehouses. "
+
+msgid "<div class=\"col-12 col-md-2\"><button class=\"btn btn-primary w-100\">Показать</button></div>"
+msgstr "<div class=\"col-12 col-md-2\"><button class=\"btn btn-primary w-100\">Show</button></div>"
+
+msgid "<div class=\"col-12 col-md-3\"><label class=\"form-label mb-1\">Поиск</label>"
+msgstr "<div class=\"col-12 col-md-3\"><label class=\"form-label mb-1\">Search</label>"
+
+msgid "<div class=\"col-12 col-md-4\"><label class=\"form-label\">Витрина</label>"
+msgstr "<div class=\"col-12 col-md-4\"><label class=\"form-label\">Catalog</label>"
+
+msgid "<div class=\"col-12 col-md-4\"><label class=\"form-label\">Разделитель</label>"
+msgstr "<div class=\"col-12 col-md-4\"><label class=\"form-label\">Separator</label>"
+
+msgid "<div class=\"col-12 col-md-4\"><label class=\"form-label\">Склад для начального остатка</label>"
+msgstr "<div class=\"col-12 col-md-4\"><label class=\"form-label\">Warehouse for the opening stock</label>"
+
+msgid "<div class=\"col-12\"><label class=\"form-label\">…или вставьте таблицу текстом</label>"
+msgstr "<div class=\"col-12\"><label class=\"form-label\">…or paste the table as text</label>"
+
+msgid "<div class=\"col-12\"><label class=\"form-label\">Идентификатор объекта</label>"
+msgstr "<div class=\"col-12\"><label class=\"form-label\">Object id</label>"
+
+msgid "<div class=\"col-12\"><label class=\"form-label\">Тип номенклатуры</label>"
+msgstr "<div class=\"col-12\"><label class=\"form-label\">Item type</label>"
+
+msgid "<div class=\"col-12\"><label class=\"form-label\">Файл CSV</label>"
+msgstr "<div class=\"col-12\"><label class=\"form-label\">CSV file</label>"
+
+msgid "<div class=\"col-6 col-md-3\"><label class=\"form-label mb-1\">Категория</label>"
+msgstr "<div class=\"col-6 col-md-3\"><label class=\"form-label mb-1\">Category</label>"
+
+msgid "<div class=\"col-6 col-md-3\"><label class=\"form-label mb-1\">Сортировка</label>"
+msgstr "<div class=\"col-6 col-md-3\"><label class=\"form-label mb-1\">Sorting</label>"
+
+msgid "<div class=\"col-6 col-md-3\"><label class=\"form-label\">По дату</label>"
+msgstr "<div class=\"col-6 col-md-3\"><label class=\"form-label\">To date</label>"
+
+msgid "<div class=\"col-6 col-md-3\"><label class=\"form-label\">С даты</label>"
+msgstr "<div class=\"col-6 col-md-3\"><label class=\"form-label\">From date</label>"
+
+msgid "<div class=\"col-6\"><label class=\"form-label\">Единица</label>"
+msgstr "<div class=\"col-6\"><label class=\"form-label\">Unit</label>"
+
+msgid "<div class=\"col-auto\"><button class=\"btn btn-sm btn-primary\">Показать</button></div>"
+msgstr "<div class=\"col-auto\"><button class=\"btn btn-sm btn-primary\">Show</button></div>"
+
+msgid "<div class=\"col-auto\"><label class=\"form-label\">Витрина</label>"
+msgstr "<div class=\"col-auto\"><label class=\"form-label\">Catalog</label>"
+
+msgid "<div class=\"col-auto\"><label class=\"form-label\">Группировка</label>"
+msgstr "<div class=\"col-auto\"><label class=\"form-label\">Grouping</label>"
+
+msgid "<div class=\"col-auto\"><label class=\"form-label\">По</label>"
+msgstr "<div class=\"col-auto\"><label class=\"form-label\">To</label>"
+
+msgid "<div class=\"col-auto\"><label class=\"form-label\">С</label>"
+msgstr "<div class=\"col-auto\"><label class=\"form-label\">From</label>"
+
+msgid "<div class=\"col-auto\"><label class=\"form-label\">Состояние</label>"
+msgstr "<div class=\"col-auto\"><label class=\"form-label\">Status</label>"
+
+msgid "<div class=\"col-md-1\"><label class=\"form-label\">Макс.</label>"
+msgstr "<div class=\"col-md-1\"><label class=\"form-label\">Max</label>"
+
+msgid "<div class=\"col-md-10\"><label class=\"form-label\">Описание для сотрудника</label>"
+msgstr "<div class=\"col-md-10\"><label class=\"form-label\">Description for the employee</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Выдача</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Issue</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Единица</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Unit</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Значок</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Icon</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Количество</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Quantity</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">На что</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">What it covers</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Норма</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Allowance</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Оплата</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Payment</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Период</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Period</label>"
+
+msgid "<div class=\"col-md-2\"><label class=\"form-label\">Цена</label>"
+msgstr "<div class=\"col-md-2\"><label class=\"form-label\">Price</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Артикул</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Reference</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Максимум в одном заказе</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Maximum per order</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">На кого</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Whom it applies to</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Название</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Name</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Ответственный</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Owner</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Позиция</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Item</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Порог оповещения</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Alert threshold</label>"
+
+msgid "<div class=\"col-md-3\"><label class=\"form-label\">Целевой запас</label>"
+msgstr "<div class=\"col-md-3\"><label class=\"form-label\">Target stock</label>"
+
+msgid "<div class=\"col-md-4\"><label class=\"form-label\">Категория</label>"
+msgstr "<div class=\"col-md-4\"><label class=\"form-label\">Category</label>"
+
+msgid "<div class=\"col-md-4\"><label class=\"form-label\">Название набора</label>"
+msgstr "<div class=\"col-md-4\"><label class=\"form-label\">Kit name</label>"
+
+msgid "<div class=\"col-md-4\"><label class=\"form-label\">Название</label>"
+msgstr "<div class=\"col-md-4\"><label class=\"form-label\">Name</label>"
+
+msgid "<div class=\"col-md-4\"><label class=\"form-label\">Пояснение</label>"
+msgstr "<div class=\"col-md-4\"><label class=\"form-label\">Note</label>"
+
+msgid "<div class=\"col-md-4\"><label class=\"form-label\">Расположение</label>"
+msgstr "<div class=\"col-md-4\"><label class=\"form-label\">Location</label>"
+
+msgid "<div class=\"col-md-4\"><label class=\"form-label\">Сотрудник</label>"
+msgstr "<div class=\"col-md-4\"><label class=\"form-label\">Employee</label>"
+
+msgid "<div class=\"col-md-5\"><label class=\"form-label\">Наименование</label>"
+msgstr "<div class=\"col-md-5\"><label class=\"form-label\">Name</label>"
+
+msgid "<div class=\"col-md-5\"><label class=\"form-label\">Основание</label>"
+msgstr "<div class=\"col-md-5\"><label class=\"form-label\">Grounds</label>"
+
+msgid "<div class=\"col-md-6\"><label class=\"form-label\">Позиция витрины</label>"
+msgstr "<div class=\"col-md-6\"><label class=\"form-label\">Catalog item</label>"
+
+msgid "<div class=\"flex-fill text-center\" title=\"%s: %s ед.\">"
+msgstr "<div class=\"flex-fill text-center\" title=\"%s: %s units\">"
+
+msgid "<div class=\"fw-bold mb-1\">В подразделении «"
+msgstr "<div class=\"fw-bold mb-1\">The entity “"
+
+msgid "<div class=\"fw-bold mb-1\">Готовые наборы</div>"
+msgstr "<div class=\"fw-bold mb-1\">Ready-made kits</div>"
+
+msgid "<div class=\"fw-bold mb-1\">Добавить существующую номенклатуру</div>"
+msgstr "<div class=\"fw-bold mb-1\">Add an existing item</div>"
+
+msgid "<div class=\"fw-bold mb-1\">Завести новую позицию</div>"
+msgstr "<div class=\"fw-bold mb-1\">Create a new item</div>"
+
+msgid "<div class=\"fw-bold mb-1\">Разовая выдача</div>"
+msgstr "<div class=\"fw-bold mb-1\">One-off issue</div>"
+
+msgid "<div class=\"fw-bold mb-1\">Создать набор</div>"
+msgstr "<div class=\"fw-bold mb-1\">Create a kit</div>"
+
+msgid "<div class=\"fw-bold mb-2\"><i class=\"ti ti-shopping-cart me-1\"></i>Корзина%s</div>"
+msgstr "<div class=\"fw-bold mb-2\"><i class=\"ti ti-shopping-cart me-1\"></i>Cart%s</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Добавить лимит</div>"
+msgstr "<div class=\"fw-bold mb-2\">Add a limit</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Добавить склад</div>"
+msgstr "<div class=\"fw-bold mb-2\">Add a warehouse</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Заказы за период</div>"
+msgstr "<div class=\"fw-bold mb-2\">Orders in the period</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Какие столбцы понимает загрузка</div>"
+msgstr "<div class=\"fw-bold mb-2\">Which columns the import understands</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Корректировка по инвентаризации</div>"
+msgstr "<div class=\"fw-bold mb-2\">Stock count adjustment</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Кто получает</div>"
+msgstr "<div class=\"fw-bold mb-2\">Who receives</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Лимиты витрины</div>"
+msgstr "<div class=\"fw-bold mb-2\">The catalog's limits</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Мои последние заказы</div>"
+msgstr "<div class=\"fw-bold mb-2\">My recent orders</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Оформить приход</div>"
+msgstr "<div class=\"fw-bold mb-2\">Record a receipt</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Переместить на другой склад</div>"
+msgstr "<div class=\"fw-bold mb-2\">Transfer to another warehouse</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Пора закупать</div>"
+msgstr "<div class=\"fw-bold mb-2\">Time to purchase</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Последние движения по складу</div>"
+msgstr "<div class=\"fw-bold mb-2\">Recent warehouse movements</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Распределение по ступеням</div>"
+msgstr "<div class=\"fw-bold mb-2\">Distribution by level</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Расход по месяцам</div>"
+msgstr "<div class=\"fw-bold mb-2\">Consumption by month</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Сколько ждут выдачи</div>"
+msgstr "<div class=\"fw-bold mb-2\">How long the wait is</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Списать со склада</div>"
+msgstr "<div class=\"fw-bold mb-2\">Write off from the warehouse</div>"
+
+msgid "<div class=\"fw-bold mb-2\">Что берут чаще всего</div>"
+msgstr "<div class=\"fw-bold mb-2\">Most requested items</div>"
+
+msgid "<div class=\"fw-bold mt-4 mb-2\">Последние движения</div>"
+msgstr "<div class=\"fw-bold mt-4 mb-2\">Recent movements</div>"
+
+msgid "<div class=\"mb-1\">Уже получили: <b>%d</b>%s%s</div>"
+msgstr "<div class=\"mb-1\">Already received: <b>%d</b>%s%s</div>"
+
+msgid "<div class=\"mb-2\">%s. Расписывается в накладной: <b>%s</b>.%s</div>"
+msgstr "<div class=\"mb-2\">%s. Signs the issue note: <b>%s</b>.%s</div>"
+
+msgid "<div class=\"mb-2\"><a href=\"%s\">Заявка №%d</a></div>"
+msgstr "<div class=\"mb-2\"><a href=\"%s\">Ticket No.%d</a></div>"
+
+msgid "<div class=\"mb-2\">Действующие разрешения: <b>%d</b>%s</div>"
+msgstr "<div class=\"mb-2\">Permissions in force: <b>%d</b>%s</div>"
+
+msgid "<div class=\"mb-2\">Получатель: <b>%s</b></div>"
+msgstr "<div class=\"mb-2\">Recipient: <b>%s</b></div>"
+
+msgid "<div class=\"text-center text-muted small\">Показано %d–%d из %d</div>"
+msgstr "<div class=\"text-center text-muted small\">Showing %d–%d of %d</div>"
+
+msgid "<div class=\"text-danger small\">На складе «%s» свободно %d — "
+msgstr "<div class=\"text-danger small\">Only %d available in the warehouse “%s” — "
+
+msgid "<div class=\"text-muted mb-3\">Набор — готовая корзина одной кнопкой. "
+msgstr "<div class=\"text-muted mb-3\">A kit is a ready-made cart in one button. "
+
+msgid "<div class=\"text-muted small mb-2\">В выгрузку попадают цены, "
+msgstr "<div class=\"text-muted small mb-2\">The export includes the prices, "
+
+msgid "<div class=\"text-muted small mb-2\">Если позиция уже заведена в GLPI — "
+msgstr "<div class=\"text-muted small mb-2\">If the item already exists in GLPI — "
+
+msgid "<div class=\"text-muted small mb-2\">Записывается двумя движениями: "
+msgstr "<div class=\"text-muted small mb-2\">Recorded as two movements: "
+
+msgid "<div class=\"text-muted small mb-2\">Набор пропадает у сотрудника после того, "
+msgstr "<div class=\"text-muted small mb-2\">The kit disappears for the employee once "
+
+msgid "<div class=\"text-muted small mb-2\">Одна кнопка кладёт в корзину сразу "
+msgstr "<div class=\"text-muted small mb-2\">One button puts everything the kit "
+
+msgid "<div class=\"text-muted small mb-2\">Получение: %s</div>"
+msgstr "<div class=\"text-muted small mb-2\">Pickup: %s</div>"
+
+msgid "<div class=\"text-muted small mb-2\">Порча, утрата, истёк срок. Это не выдача: "
+msgstr "<div class=\"text-muted small mb-2\">Damage, loss, expiry. This is not an issue: "
+
+msgid "<div class=\"text-muted small mb-2\">Сначала заводится сам набор, "
+msgstr "<div class=\"text-muted small mb-2\">The kit itself is created first, "
+
+msgid "<div class=\"text-muted small mb-2\">Создаст расходный материал в справочнике "
+msgstr "<div class=\"text-muted small mb-2\">This creates a consumable in the GLPI "
+
+msgid "<div class=\"text-muted small mb-2\">Укажите фактическое количество: "
+msgstr "<div class=\"text-muted small mb-2\">State the actual quantity: "
+
+msgid "<div class=\"text-muted small mt-1\">Наличие показано по складу «%s».</div>"
+msgstr "<div class=\"text-muted small mt-1\">Stock is shown for the warehouse “%s”.</div>"
+
+msgid "<div class=\"text-muted small mt-2\">Для личных норм израсходовано — сумма по "
+msgstr "<div class=\"text-muted small mt-2\">For personal allowances, the amount spent is the sum over "
+
+msgid "<div class=\"text-muted small mt-2\">Кодировка определяется сама: подходит и UTF-8, "
+msgstr "<div class=\"text-muted small mt-2\">The encoding is detected automatically: both UTF-8 "
+
+msgid "<div class=\"text-muted small mt-2\">Лимит расходуется по: %s.</div>"
+msgstr "<div class=\"text-muted small mt-2\">The limit is spent by: %s.</div>"
+
+msgid "<div class=\"text-muted small mt-2\">От отправки заказа сотрудником "
+msgstr "<div class=\"text-muted small mt-2\">From the moment the employee submits the order "
+
+msgid "<div class=\"text-muted small\">%s · позиций %d%s</div>"
+msgstr "<div class=\"text-muted small\">%s · items %d%s</div>"
+
+msgid "<div class=\"text-muted small\">Ориентировочно %s</div>"
+msgstr "<div class=\"text-muted small\">Approximately %s</div>"
+
+msgid "<div class=\"text-muted small\">Остальное выдаётся бесплатно.</div>"
+msgstr "<div class=\"text-muted small\">Everything else is issued free of charge.</div>"
+
+msgid "<div class=\"text-muted small\">Показаны первые 200 должностей. "
+msgstr "<div class=\"text-muted small\">The first 200 job titles are shown. "
+
+msgid "<div class=\"text-muted small\">Список складов появится после выбора витрины "
+msgstr "<div class=\"text-muted small\">The list of warehouses appears once a catalog is chosen "
+
+msgid "<div class=\"text-muted\">Выданных заказов за период нет.</div>"
+msgstr "<div class=\"text-muted\">No orders were issued in this period.</div>"
+
+msgid "<div class=\"text-muted\">За выбранный период выдач не было.</div>"
+msgstr "<div class=\"text-muted\">Nothing was issued in the chosen period.</div>"
+
+msgid "<div class=\"text-muted\">Заказов не было.</div>"
+msgstr "<div class=\"text-muted\">There were no orders.</div>"
+
+msgid "<div class=\"text-muted\">Лимиты не настроены.</div>"
+msgstr "<div class=\"text-muted\">No limits are configured.</div>"
+
+msgid "<div class=\"text-muted\">Нет данных за период.</div>"
+msgstr "<div class=\"text-muted\">No data for this period.</div>"
+
+msgid "<div class=\"text-muted\">Позиций ниже порога нет.</div>"
+msgstr "<div class=\"text-muted\">No items are below the threshold.</div>"
+
+msgid "<div class=\"text-muted\">Пока пусто. Добавьте позиции из каталога.</div>"
+msgstr "<div class=\"text-muted\">Empty so far. Add items from the catalog.</div>"
+
+msgid "<div class=\"text-muted\">У витрины один склад — перемещать некуда.</div>"
+msgstr "<div class=\"text-muted\">The catalog has one warehouse — nowhere to transfer to.</div>"
+
+msgid "<div><span class=\"badge bg-green-lt\">бесплатно</span></div>"
+msgstr "<div><span class=\"badge bg-green-lt\">free of charge</span></div>"
+
+msgid "<div><span class=\"fs-4 fw-bold\">Заказ №%d</span> "
+msgstr "<div><span class=\"fs-4 fw-bold\">Order No.%d</span> "
+
+msgid "<div><span class=\"fw-bold fs-4\">Заказ №%d</span> "
+msgstr "<div><span class=\"fw-bold fs-4\">Order No.%d</span> "
+
+msgid "<div>Витрины настроены в других подразделениях. Переключите "
+msgstr "<div>Catalogs are set up in other entities. Switch the "
+
+msgid "<h1 style=\"font-size:20px;margin:0 0 12px\">Накладная печатается по факту выдачи</h1>"
+msgstr "<h1 style=\"font-size:20px;margin:0 0 12px\">The issue note is printed once the goods are issued</h1>"
+
+msgid "<h2 class=\"mb-1\">Загрузка номенклатуры списком</h2>"
+msgstr "<h2 class=\"mb-1\">Bulk item import</h2>"
+
+msgid "<h2 class=\"mb-3\">Аналитика магазина</h2>"
+msgstr "<h2 class=\"mb-3\">Store analytics</h2>"
+
+msgid "<h2 class=\"mb-3\">Магазин</h2>"
+msgstr "<h2 class=\"mb-3\">Store</h2>"
+
+msgid "<h2 class=\"mb-3\">Очередь заказов</h2>"
+msgstr "<h2 class=\"mb-3\">Order queue</h2>"
+
+msgid "<h2>Отчёт по выдачам</h2>"
+msgstr "<h2>Issue report</h2>"
+
+msgid "<h2>Уровни должностей</h2>"
+msgstr "<h2>Job title levels</h2>"
+
+msgid "<i class=\"ti ti-download me-1\"></i>Скачать образец</a>"
+msgstr "<i class=\"ti ti-download me-1\"></i>Download the sample</a>"
+
+msgid "<i class=\"ti ti-printer me-1\"></i>Печать накладной</a></div>"
+msgstr "<i class=\"ti ti-printer me-1\"></i>Print the issue note</a></div>"
+
+msgid "<i class=\"ti ti-upload me-1\"></i>Загрузить списком</a>"
+msgstr "<i class=\"ti ti-upload me-1\"></i>Import from a file</a>"
+
+msgid "<input type=\"text\" name=\"unit\" value=\"шт\" class=\"form-control form-control-sm\"></div>"
+msgstr "<input type=\"text\" name=\"unit\" value=\"pcs\" class=\"form-control form-control-sm\"></div>"
+
+msgid "<label class=\"form-check-label small\" for=\"sf-instock\">в наличии</label></div>"
+msgstr "<label class=\"form-check-label small\" for=\"sf-instock\">in stock</label></div>"
+
+msgid "<label class=\"form-check-label\" for=\"sf_hard\">Жёсткий запрет: "
+msgstr "<label class=\"form-check-label\" for=\"sf_hard\">Hard block: "
+
+msgid "<label class=\"form-label fw-bold mb-1\">Для кого заказ</label>"
+msgstr "<label class=\"form-label fw-bold mb-1\">Who is this order for</label>"
+
+msgid "<label class=\"form-label mb-0\">Витрина</label>"
+msgstr "<label class=\"form-label mb-0\">Catalog</label>"
+
+msgid "<label class=\"form-label\">Где получить</label><select name=\"warehouses_id\" "
+msgstr "<label class=\"form-label\">Where to pick it up</label><select name=\"warehouses_id\" "
+
+msgid "<label class=\"form-label\">Зачем нужен заказ%s</label>"
+msgstr "<label class=\"form-label\">Why the order is needed%s</label>"
+
+msgid "<label class=\"form-label\">Кто согласует%s</label>"
+msgstr "<label class=\"form-label\">Who approves%s</label>"
+
+msgid "<li><b>Лимит расходует получатель, а не заказчик.</b> Заказ на отдел "
+msgstr "<li><b>The limit is spent by the recipient, not by the requester.</b> An order for a group "
+
+msgid "<li><b>Период считается от календарной границы</b>, а не «за последние "
+msgstr "<li><b>The period runs from the calendar boundary</b>, not “over the last "
+
+msgid "<li><b>Правила складываются.</b> Если на позицию действуют несколько "
+msgstr "<li><b>Rules add up.</b> If several rules apply to an item, "
+
+msgid "<li><b>Проверка идёт дважды:</b> в корзине — предупреждением, и ещё раз "
+msgstr "<li><b>The check happens twice:</b> in the cart as a warning, and again "
+
+msgid "<li><b>Считается только выданное.</b> Заказ, который ещё согласуют или "
+msgstr "<li><b>Only what was issued counts.</b> An order still awaiting approval or "
+
+msgid "<li><b>Считаются штуки, а не деньги.</b> Складываются количества, "
+msgstr "<li><b>Units are counted, not money.</b> Quantities are added up, "
+
+msgid "<option value=\"%d\">%s — свободно %d</option>"
+msgstr "<option value=\"%d\">%s — %d available</option>"
+
+msgid "<option value=\"%d\">%s — учтено %d</option>"
+msgstr "<option value=\"%d\">%s — %d on record</option>"
+
+msgid "<option value=\"%d\">на склад: %s</option>"
+msgstr "<option value=\"%d\">to the warehouse: %s</option>"
+
+msgid "<option value=\"0\">— выберите —</option>"
+msgstr "<option value=\"0\">— select —</option>"
+
+msgid "<option value=\"0\">— не выбрано —</option>"
+msgstr "<option value=\"0\">— not selected —</option>"
+
+msgid "<option value=\"0\">бесплатно</option>"
+msgstr "<option value=\"0\">free of charge</option>"
+
+msgid "<option value=\"0\">все</option>"
+msgstr "<option value=\"0\">all</option>"
+
+msgid "<option value=\"0\">не приходовать</option>"
+msgstr "<option value=\"0\">do not book any stock</option>"
+
+msgid "<option value=\"0\">сколько угодно раз</option>"
+msgstr "<option value=\"0\">any number of times</option>"
+
+msgid "<option value=\"1\">один раз на человека</option></select></div>"
+msgstr "<option value=\"1\">once per person</option></select></div>"
+
+msgid "<option value=\"1\">платно</option></select></div>"
+msgstr "<option value=\"1\">chargeable</option></select></div>"
+
+msgid "<option value=\"all:0\">на всех сотрудников витрины</option>"
+msgstr "<option value=\"all:0\">every employee of the catalog</option>"
+
+msgid "<option value=\"catalog\">вся витрина</option>"
+msgstr "<option value=\"catalog\">the whole catalog</option>"
+
+msgid "<option value=\"category\">категория</option></select></div>"
+msgstr "<option value=\"category\">a category</option></select></div>"
+
+msgid "<option value=\"each\">у каждого своя</option>"
+msgstr "<option value=\"each\">one per recipient</option>"
+
+msgid "<option value=\"entity:%d\">на подразделение: %s</option>"
+msgstr "<option value=\"entity:%d\">an entity: %s</option>"
+
+msgid "<option value=\"group:%d\">на отдел: %s</option>"
+msgstr "<option value=\"group:%d\">a group: %s</option>"
+
+msgid "<option value=\"month\">месяц</option><option value=\"quarter\">квартал</option>"
+msgstr "<option value=\"month\">month</option><option value=\"quarter\">quarter</option>"
+
+msgid "<option value=\"product\" selected>позиция</option>"
+msgstr "<option value=\"product\" selected>an item</option>"
+
+msgid "<option value=\"title:%d\">на должность: %s</option>"
+msgstr "<option value=\"title:%d\">a job title: %s</option>"
+
+msgid "<option value=\"total\">одна на всю область</option></select></div>"
+msgstr "<option value=\"total\">shared across the scope</option></select></div>"
+
+msgid "<option value=\"year\">год</option></select></div>"
+msgstr "<option value=\"year\">year</option></select></div>"
+
+msgid "<p class=\"mb-0\"><b>Мягкий лимит</b> предупреждает, но отправить заказ "
+msgstr "<p class=\"mb-0\"><b>A soft limit</b> warns but still lets the order "
+
+msgid "<p class=\"mb-2\">Правило отвечает на три вопроса: <b>на кого</b> оно "
+msgstr "<p class=\"mb-2\">A rule answers three questions: <b>whom</b> it "
+
+msgid "<p class=\"text-muted small mt-2\">В отчёт попадает только фактически выданное: "
+msgstr "<p class=\"text-muted small mt-2\">The report covers only what was actually issued: "
+
+msgid "<p class=\"text-muted\" style=\"max-width:76ch\">Правило согласования формулируется "
+msgstr "<p class=\"text-muted\" style=\"max-width:76ch\">An approval rule is phrased "
+
+msgid "<p class=\"text-muted\">Таблица из бухгалтерии или прайс поставщика заводит витрину "
+msgstr "<p class=\"text-muted\">A table from the accounts department or a supplier's price list fills the catalog "
+
+msgid "<p style=\"margin:0 0 20px\">Проведите выдачу в очереди склада, и кнопка "
+msgstr "<p style=\"margin:0 0 20px\">Issue the order in the warehouse queue, and the print "
+
+msgid "<p style=\"margin:0 0 8px\">Заказ №%d пока в состоянии «%s». Пока заказ "
+msgstr "<p style=\"margin:0 0 8px\">Order No.%d is still in the status “%s”. Until the order "
+
+msgid "<p><a href=\"%s/front/queue.php\">К очереди выдачи</a></p>"
+msgstr "<p><a href=\"%s/front/queue.php\">To the issue queue</a></p>"
+
+msgid "<p><b>Норма</b> решает, чей запас расходуется. <i>У каждого своя</i> — "
+msgstr "<p><b>The allowance</b> decides whose pool is spent. <i>One per recipient</i> — "
+
+msgid "<p><em>Ход выдачи фиксируется в ленте заявки: согласование, "
+msgstr "<p><em>The progress of the issue is recorded in the ticket's timeline: approval, "
+
+msgid "<p><strong>В согласовании отказано.</strong>%s</p>"
+msgstr "<p><strong>Approval was refused.</strong>%s</p>"
+
+msgid "<p><strong>Заказ выдан.</strong></p>"
+msgstr "<p><strong>The order has been issued.</strong></p>"
+
+msgid "<p><strong>Заказ отменён.</strong>%s</p><p>Резерв со склада снят, "
+msgstr "<p><strong>The order has been cancelled.</strong>%s</p><p>The warehouse reservation has been released, "
+
+msgid "<p><strong>Заказ отправлен на согласование.</strong></p>"
+msgstr "<p><strong>The order has been sent for approval.</strong></p>"
+
+msgid "<p><strong>Заказ собран и готов к получению.</strong></p>"
+msgstr "<p><strong>The order has been picked and is ready for pickup.</strong></p>"
+
+msgid "<p><strong>Заказ согласован.</strong>%s</p>"
+msgstr "<p><strong>The order has been approved.</strong>%s</p>"
+
+msgid "<p><strong>Заказ №"
+msgstr "<p><strong>Order No."
+
+msgid "<p><strong>Зачем нужен заказ:</strong> "
+msgstr "<p><strong>Why the order is needed:</strong> "
+
+msgid "<p><strong>Отказано в согласовании.</strong>%s</p>"
+msgstr "<p><strong>Approval refused.</strong>%s</p>"
+
+msgid "<p><strong>Склад подтвердил количества к выдаче.</strong>"
+msgstr "<p><strong>The warehouse has confirmed the quantities to issue.</strong>"
+
+msgid "<p><strong>Согласование не требуется.</strong></p>"
+msgstr "<p><strong>No approval is required.</strong></p>"
+
+msgid "<p><strong>Согласующий не определён.</strong></p>"
+msgstr "<p><strong>The approver has not been determined.</strong></p>"
+
+msgid "<p><strong>Состав заказа</strong></p>"
+msgstr "<p><strong>Order contents</strong></p>"
+
+msgid "<p>Витрина работает без согласования: заказ сразу передан на склад "
+msgstr "<p>The catalog works without approval: the order went straight to the warehouse "
+
+msgid "<p>Забрать: %s. Получатель: %s.</p>"
+msgstr "<p>Pick it up at: %s. Recipient: %s.</p>"
+
+msgid "<p>Заказ в пределах порога рутинных заказов витрины и сразу передан "
+msgstr "<p>The order is within the catalog's routine order threshold and went straight "
+
+msgid "<p>Заказ дальше не идёт, склад его не комплектует, резерв снят.</p>"
+msgstr "<p>The order goes no further, the warehouse will not pick it, and the reservation has been released.</p>"
+
+msgid "<p>Заказ не выдавался, склад не тронут. Если потребность "
+msgstr "<p>Nothing was issued and the stock is untouched. If the need "
+
+msgid "<p>Заказ №%d выдан по накладной %s. Выдано позиций: %d, единиц: %d.</p>"
+msgstr "<p>Order No.%d was issued against the note %s. Items issued: %d, units: %d.</p>"
+
+msgid "<p>Заказ №%d отклонён при согласовании, ничего не выдавалось, "
+msgstr "<p>Order No.%d was refused at approval, nothing was issued, "
+
+msgid "<p>Заказ №%d отменён, ничего не выдавалось, резерв со склада снят.%s</p>"
+msgstr "<p>Order No.%d was cancelled, nothing was issued, and the warehouse reservation has been released.%s</p>"
+
+msgid "<p>Накладная: %s. Место выдачи: %s. Получил: %s. Выдал: %s.</p>"
+msgstr "<p>Issue note: %s. Pickup place: %s. Received by: %s. Issued by: %s.</p>"
+
+msgid "<p>Передан на склад для комплектования. Позиции зарезервированы "
+msgstr "<p>Passed to the warehouse for picking. The items are reserved "
+
+msgid "<p>Работа по заказу №%d завершена.</p>"
+msgstr "<p>Work on order No.%d is finished.</p>"
+
+msgid "<p>Согласующий: %s</p><p>Пока согласование не получено, склад заказ "
+msgstr "<p>Approver: %s</p><p>Until the approval is given, the warehouse will not "
+
+msgid "<p>У сотрудника не заполнен руководитель, а у витрины не указана "
+msgstr "<p>The employee's manager field is empty and the catalog has no "
+
+msgid "<select name=\"catalog\" class=\"form-select form-select-sm\"><option value=\"0\">все</option>"
+msgstr "<select name=\"catalog\" class=\"form-select form-select-sm\"><option value=\"0\">all</option>"
+
+msgid "<span class=\"badge bg-blue-lt\">да</span>"
+msgstr "<span class=\"badge bg-blue-lt\">yes</span>"
+
+msgid "<span class=\"badge bg-blue-lt\">должностей в справочнике: %d</span>"
+msgstr "<span class=\"badge bg-blue-lt\">job titles in the dictionary: %d</span>"
+
+msgid "<span class=\"badge bg-blue-lt\">к закупке: %d ед.</span>"
+msgstr "<span class=\"badge bg-blue-lt\">to purchase: %d units</span>"
+
+msgid "<span class=\"badge bg-blue-lt\">обновить: %d</span>"
+msgstr "<span class=\"badge bg-blue-lt\">update: %d</span>"
+
+msgid "<span class=\"badge bg-danger-lt\">нет в наличии</span>"
+msgstr "<span class=\"badge bg-danger-lt\">out of stock</span>"
+
+msgid "<span class=\"badge bg-green-lt\">бесплатно</span>"
+msgstr "<span class=\"badge bg-green-lt\">free of charge</span>"
+
+msgid "<span class=\"badge bg-green-lt\">в наличии "
+msgstr "<span class=\"badge bg-green-lt\">available "
+
+msgid "<span class=\"badge bg-green-lt\">выдаётся</span>"
+msgstr "<span class=\"badge bg-green-lt\">issued</span>"
+
+msgid "<span class=\"badge bg-green-lt\">да</span>"
+msgstr "<span class=\"badge bg-green-lt\">yes</span>"
+
+msgid "<span class=\"badge bg-green-lt\">размечено: %d</span></div>"
+msgstr "<span class=\"badge bg-green-lt\">marked up: %d</span></div>"
+
+msgid "<span class=\"badge bg-green-lt\">создать: %d</span>"
+msgstr "<span class=\"badge bg-green-lt\">create: %d</span>"
+
+msgid "<span class=\"badge bg-orange-lt\">ниже порога: %d</span>"
+msgstr "<span class=\"badge bg-orange-lt\">below threshold: %d</span>"
+
+msgid "<span class=\"badge bg-orange-lt\">платно</span>"
+msgstr "<span class=\"badge bg-orange-lt\">chargeable</span>"
+
+msgid "<span class=\"badge bg-orange-lt\">предупреждение</span>"
+msgstr "<span class=\"badge bg-orange-lt\">warning</span>"
+
+msgid "<span class=\"badge bg-purple-lt\">вручную</span>"
+msgstr "<span class=\"badge bg-purple-lt\">by hand</span>"
+
+msgid "<span class=\"badge bg-red-lt\">запрет</span>"
+msgstr "<span class=\"badge bg-red-lt\">block</span>"
+
+msgid "<span class=\"badge bg-red-lt\">нулевой остаток: %d</span>"
+msgstr "<span class=\"badge bg-red-lt\">zero stock: %d</span>"
+
+msgid "<span class=\"badge bg-red-lt\">ошибок: %d</span></div>"
+msgstr "<span class=\"badge bg-red-lt\">errors: %d</span></div>"
+
+msgid "<span class=\"badge bg-secondary-lt\">нет</span>"
+msgstr "<span class=\"badge bg-secondary-lt\">no</span>"
+
+msgid "<span class=\"badge bg-secondary-lt\">скрыт</span>"
+msgstr "<span class=\"badge bg-secondary-lt\">hidden</span>"
+
+msgid "<span class=\"form-check-label\">перезаписать и ручные правки</span></label>"
+msgstr "<span class=\"form-check-label\">overwrite manual edits too</span></label>"
+
+msgid "<span class=\"text-muted small\">Найдено позиций: <b>%d</b> из %d.</span>"
+msgstr "<span class=\"text-muted small\">Items found: <b>%d</b> of %d.</span>"
+
+msgid "<span class=\"text-muted small\">нет</span>"
+msgstr "<span class=\"text-muted small\">none</span>"
+
+msgid "<span class=\"text-muted small\">по шаблону</span>"
+msgstr "<span class=\"text-muted small\">from the name</span>"
+
+msgid "<span class=\"text-muted\">%s · заказчик %s</span></div>"
+msgstr "<span class=\"text-muted\">%s · requester %s</span></div>"
+
+msgid "<span class=\"text-muted\">%s · оценок %d</span></div>"
+msgstr "<span class=\"text-muted\">%s · ratings %d</span></div>"
+
+msgid "<span class=\"text-muted\">нет</span>"
+msgstr "<span class=\"text-muted\">no</span>"
+
+msgid "<span class=\"text-muted\">Позиций в витрине: <b>%d</b></span>"
+msgstr "<span class=\"text-muted\">Items in the catalog: <b>%d</b></span>"
+
+msgid "<span class=\"text-muted\">позиций: %d, на сумму %s</span></div>"
+msgstr "<span class=\"text-muted\">items: %d, total %s</span></div>"
+
+msgid "<span>Выдано: <b>%d</b></span>%s</div>"
+msgstr "<span>Issued: <b>%d</b></span>%s</div>"
+
+msgid "<span>Запрошено: <b>%d</b></span>"
+msgstr "<span>Requested: <b>%d</b></span>"
+
+msgid "<span>Итого</span><span>%s</span></div>"
+msgstr "<span>Total</span><span>%s</span></div>"
+
+msgid "<span>К оплате</span><span>%s</span></div>"
+msgstr "<span>To pay</span><span>%s</span></div>"
+
+msgid "<span>Накладная № <b>%s</b></span>"
+msgstr "<span>Issue note No. <b>%s</b></span>"
+
+msgid "<span>Позиций: <b>%d</b></span>"
+msgstr "<span>Items: <b>%d</b></span>"
+
+msgid "<span>Сумма: <b>"
+msgstr "<span>Amount: <b>"
+
+msgid "<span>Утверждено: <b>%d</b></span>"
+msgstr "<span>Approved: <b>%d</b></span>"
+
+msgid "<table class=\"table table-sm align-middle mb-0\"><thead><tr><th>Правило</th>"
+msgstr "<table class=\"table table-sm align-middle mb-0\"><thead><tr><th>Rule</th>"
+
+msgid "<table class=\"table table-sm mb-0\"><thead><tr><th>Позиция</th>"
+msgstr "<table class=\"table table-sm mb-0\"><thead><tr><th>Item</th>"
+
+msgid "<table class=\"table table-sm mb-0\"><thead><tr><th>Получатель</th>"
+msgstr "<table class=\"table table-sm mb-0\"><thead><tr><th>Recipient</th>"
+
+msgid "<table class=\"table table-sm mb-0\"><thead><tr><th>Ступень</th>"
+msgstr "<table class=\"table table-sm mb-0\"><thead><tr><th>Level</th>"
+
+msgid "<table class=\"table table-sm mb-2\"><thead><tr><th>Позиция</th>"
+msgstr "<table class=\"table table-sm mb-2\"><thead><tr><th>Item</th>"
+
+msgid "<table class=\"table table-sm\"><thead><tr><th>Правило</th><th>На кого</th>"
+msgstr "<table class=\"table table-sm\"><thead><tr><th>Rule</th><th>Whom</th>"
+
+msgid "<table class=\"table table-sm\"><thead><tr><th>Склад</th><th>Расположение</th>"
+msgstr "<table class=\"table table-sm\"><thead><tr><th>Warehouse</th><th>Location</th>"
+
+msgid "<td class=\"text-end\"><a class=\"btn btn-sm btn-outline-secondary\" href=\"%s\">карточка</a></td></tr>"
+msgstr "<td class=\"text-end\"><a class=\"btn btn-sm btn-outline-secondary\" href=\"%s\">card</a></td></tr>"
+
+msgid "<tfoot><tr class=\"fw-bold\"><td>Итого</td><td></td>"
+msgstr "<tfoot><tr class=\"fw-bold\"><td>Total</td><td></td>"
+
+msgid "<th class=\"text-end\">Было</th><th class=\"text-end\">Стало</th>"
+msgstr "<th class=\"text-end\">Before</th><th class=\"text-end\">After</th>"
+
+msgid "<th class=\"text-end\">Выдано</th>"
+msgstr "<th class=\"text-end\">Issued</th>"
+
+msgid "<th class=\"text-end\">Выдано</th><th class=\"text-end\">Сумма</th></tr></thead><tbody>"
+msgstr "<th class=\"text-end\">Issued</th><th class=\"text-end\">Amount</th></tr></thead><tbody>"
+
+msgid "<th class=\"text-end\">Выдано</th><th>Причина изменения</th></tr></thead><tbody>"
+msgstr "<th class=\"text-end\">Issued</th><th>Reason for the change</th></tr></thead><tbody>"
+
+msgid "<th class=\"text-end\">Должностей</th><th class=\"text-end\">Сотрудников</th>"
+msgstr "<th class=\"text-end\">Job titles</th><th class=\"text-end\">Employees</th>"
+
+msgid "<th class=\"text-end\">Заказов</th></tr></thead><tbody>"
+msgstr "<th class=\"text-end\">Orders</th></tr></thead><tbody>"
+
+msgid "<th class=\"text-end\">Запрошено</th><th class=\"text-end\">Утверждено</th>"
+msgstr "<th class=\"text-end\">Requested</th><th class=\"text-end\">Approved</th>"
+
+msgid "<th class=\"text-end\">Израсходовано</th><th class=\"text-end\">Людей</th>"
+msgstr "<th class=\"text-end\">Spent</th><th class=\"text-end\">People</th>"
+
+msgid "<th class=\"text-end\">К закупке</th><th>Состояние</th><th></th></tr></thead><tbody>"
+msgstr "<th class=\"text-end\">To purchase</th><th>Status</th><th></th></tr></thead><tbody>"
+
+msgid "<th class=\"text-end\">Позиций</th><th class=\"text-end\">Запрошено</th>"
+msgstr "<th class=\"text-end\">Items</th><th class=\"text-end\">Requested</th>"
+
+msgid "<th class=\"text-end\">Порог</th></tr></thead><tbody>"
+msgstr "<th class=\"text-end\">Threshold</th></tr></thead><tbody>"
+
+msgid "<th class=\"text-end\">Порог</th><th class=\"text-end\">Цель</th>"
+msgstr "<th class=\"text-end\">Threshold</th><th class=\"text-end\">Target</th>"
+
+msgid "<th class=\"text-end\">Резерв</th><th class=\"text-end\">Свободно</th>"
+msgstr "<th class=\"text-end\">Reserved</th><th class=\"text-end\">Available</th>"
+
+msgid "<th class=\"text-end\">Свободно</th><th class=\"text-end\">К выдаче</th>"
+msgstr "<th class=\"text-end\">Available</th><th class=\"text-end\">To issue</th>"
+
+msgid "<th class=\"text-end\">Свободно</th><th class=\"text-end\">На складах</th>"
+msgstr "<th class=\"text-end\">Available</th><th class=\"text-end\">In warehouses</th>"
+
+msgid "<th class=\"text-end\">Стало</th><th>Заказ</th><th>Комментарий</th>"
+msgstr "<th class=\"text-end\">After</th><th>Order</th><th>Comment</th>"
+
+msgid "<th class=\"text-end\">Сумма, ₽</th>"
+msgstr "<th class=\"text-end\">Amount</th>"
+
+msgid "<th class=\"text-end\">Сумма</th>"
+msgstr "<th class=\"text-end\">Amount</th>"
+
+msgid "<th class=\"text-end\">Сумма</th><th></th></tr></thead><tbody>"
+msgstr "<th class=\"text-end\">Amount</th><th></th></tr></thead><tbody>"
+
+msgid "<th class=\"text-end\">Утверждено</th><th>Состояние</th><th>Создан</th>"
+msgstr "<th class=\"text-end\">Approved</th><th>Status</th><th>Created</th>"
+
+msgid "<th class=\"text-end\">Цель</th><th class=\"text-end\">Остаток</th>"
+msgstr "<th class=\"text-end\">Target</th><th class=\"text-end\">Stock</th>"
+
+msgid "<th class=\"text-end\">Цена</th><th class=\"text-end\">Порог</th>"
+msgstr "<th class=\"text-end\">Price</th><th class=\"text-end\">Threshold</th>"
+
+msgid "<th class=\"text-end\">Цена</th><th>Оплата</th><th class=\"text-end\">Остаток</th>"
+msgstr "<th class=\"text-end\">Price</th><th>Payment</th><th class=\"text-end\">Stock</th>"
+
+msgid "<th>Артикул</th><th>Категория</th><th>Ед.</th>"
+msgstr "<th>Reference</th><th>Category</th><th>Unit</th>"
+
+msgid "<th>Вид</th></tr></thead><tbody>"
+msgstr "<th>Kind</th></tr></thead><tbody>"
+
+msgid "<th>Вправе согласовывать</th></tr></thead><tbody>"
+msgstr "<th>May approve</th></tr></thead><tbody>"
+
+msgid "<th>Выдача</th><th></th></tr></thead><tbody>"
+msgstr "<th>Issue</th><th></th></tr></thead><tbody>"
+
+msgid "<th>Дата</th><th>Позиция</th><th>Тип</th><th class=\"text-end\">Кол-во</th>"
+msgstr "<th>Date</th><th>Item</th><th>Type</th><th class=\"text-end\">Qty</th>"
+
+msgid "<th>Дата</th><th>Тип</th><th class=\"text-end\">Кол-во</th>"
+msgstr "<th>Date</th><th>Type</th><th class=\"text-end\">Qty</th>"
+
+msgid "<th>Ед.</th><th class=\"text-end\">Количество</th>"
+msgstr "<th>Unit</th><th class=\"text-end\">Quantity</th>"
+
+msgid "<th>Жёсткий</th><th>Активно</th><th></th></tr></thead><tbody>"
+msgstr "<th>Hard</th><th>Active</th><th></th></tr></thead><tbody>"
+
+msgid "<th>Заказ</th><th>Комментарий</th></tr></thead><tbody>"
+msgstr "<th>Order</th><th>Comment</th></tr></thead><tbody>"
+
+msgid "<th>Запрошено</th>"
+msgstr "<th>Requested</th>"
+
+msgid "<th>Норма</th><th>На что</th><th>Период</th><th class=\"text-end\">Максимум</th>"
+msgstr "<th>Allowance</th><th>What it covers</th><th>Period</th><th class=\"text-end\">Maximum</th>"
+
+msgid "<th>Норма</th><th>Период</th><th class=\"text-end\">Предел</th>"
+msgstr "<th>Allowance</th><th>Period</th><th class=\"text-end\">Limit</th>"
+
+msgid "<th>Ответственный</th><th>По умолчанию</th><th>Активен</th>"
+msgstr "<th>Owner</th><th>Default</th><th>Active</th>"
+
+msgid "<th>Оценка</th><th>Учёт</th><th>Активна</th><th></th></tr></thead><tbody>"
+msgstr "<th>Rating</th><th>Tracking</th><th>Active</th><th></th></tr></thead><tbody>"
+
+msgid "<th>Позиция</th><th class=\"text-end\">Выдано</th>"
+msgstr "<th>Item</th><th class=\"text-end\">Issued</th>"
+
+msgid "<th>Позиция</th><th>Артикул</th><th>Категория</th><th>Ед.</th>"
+msgstr "<th>Item</th><th>Reference</th><th>Category</th><th>Unit</th>"
+
+msgid "<th>Позиция</th><th>Ед.</th>"
+msgstr "<th>Item</th><th>Unit</th>"
+
+msgid "<th>Примечание</th></tr></thead><tbody>"
+msgstr "<th>Note</th></tr></thead><tbody>"
+
+msgid "<th>Причина изменения</th></tr>"
+msgstr "<th>Reason for the change</th></tr>"
+
+msgid "<th>Причина изменения</th></tr></thead><tbody>"
+msgstr "<th>Reason for the change</th></tr></thead><tbody>"
+
+msgid "<th>Склад</th><th class=\"text-end\">На руках</th>"
+msgstr "<th>Warehouse</th><th class=\"text-end\">On hand</th>"
+
+msgid "<th>Состояние</th></tr></thead><tbody>"
+msgstr "<th>Status</th></tr></thead><tbody>"
+
+msgid "<th>Столбец</th><th>Обязателен</th><th>Что делает</th></tr></thead><tbody>"
+msgstr "<th>Column</th><th>Required</th><th>What it does</th></tr></thead><tbody>"
+
+msgid "<th>Уровень</th><th>Источник</th><th></th></tr></thead><tbody>"
+msgstr "<th>Level</th><th>Source</th><th></th></tr></thead><tbody>"
+
+msgid "<th>Цена</th><th>Сумма</th>"
+msgstr "<th>Price</th><th>Amount</th>"
+
+msgid "<thead><tr><th>Должность</th><th class=\"text-end\">Сотрудников</th>"
+msgstr "<thead><tr><th>Job title</th><th class=\"text-end\">Employees</th>"
+
+msgid "<thead><tr><th>Заказ</th><th>Заказчик</th><th>Для кого</th><th>Витрина</th><th>Склад</th>"
+msgstr "<thead><tr><th>Order</th><th>Requester</th><th>For whom</th><th>Catalog</th><th>Warehouse</th>"
+
+msgid "<thead><tr><th>Наименование</th><th class=\"text-end\">Заказов</th>"
+msgstr "<thead><tr><th>Name</th><th class=\"text-end\">Orders</th>"
+
+msgid "<thead><tr><th>Позиция</th><th>Ед.</th><th class=\"text-end\">Запрошено</th>"
+msgstr "<thead><tr><th>Item</th><th>Unit</th><th class=\"text-end\">Requested</th>"
+
+msgid "<thead><tr><th>Позиция</th><th>Ед.</th><th class=\"text-end\">На руках</th>"
+msgstr "<thead><tr><th>Item</th><th>Unit</th><th class=\"text-end\">On hand</th>"
+
+msgid "<thead><tr><th>Строка</th><th>Что будет</th><th>Наименование</th>"
+msgstr "<thead><tr><th>Row</th><th>What will happen</th><th>Name</th>"
+
+msgid "<title>Накладная ещё не готова</title></head>"
+msgstr "<title>The issue note is not ready yet</title></head>"
+
+msgid "<tr><td class=\"fw-bold\">Всего</td><td class=\"text-end fw-bold\">%s</td><td></td></tr>"
+msgstr "<tr><td class=\"fw-bold\">Total</td><td class=\"text-end fw-bold\">%s</td><td></td></tr>"
+
+msgid "<tr><td colspan=\"10\" class=\"text-muted\">В витрине нет позиций.</td></tr>"
+msgstr "<tr><td colspan=\"10\" class=\"text-muted\">The catalog has no items.</td></tr>"
+
+msgid "<tr><td colspan=\"11\" class=\"text-muted\">Заказов в этом состоянии нет.</td></tr>"
+msgstr "<tr><td colspan=\"11\" class=\"text-muted\">There are no orders in this status.</td></tr>"
+
+msgid "<tr><td colspan=\"11\" class=\"text-muted\">Позиций ещё нет.</td></tr>"
+msgstr "<tr><td colspan=\"11\" class=\"text-muted\">No items yet.</td></tr>"
+
+msgid "<tr><td colspan=\"4\" class=\"text-danger\">Позиция удалена из "
+msgstr "<tr><td colspan=\"4\" class=\"text-danger\">The item was deleted from the "
+
+msgid "<tr><td colspan=\"4\" class=\"text-muted\">За выбранный период выдач не было.</td></tr>"
+msgstr "<tr><td colspan=\"4\" class=\"text-muted\">Nothing was issued in the chosen period.</td></tr>"
+
+msgid "<tr><td colspan=\"4\"><strong>Итого</strong></td><td><strong>%d</strong></td>%s</tr>"
+msgstr "<tr><td colspan=\"4\"><strong>Total</strong></td><td><strong>%d</strong></td>%s</tr>"
+
+msgid "<tr><td colspan=\"5\" class=\"text-muted\">Должности не найдены. "
+msgstr "<tr><td colspan=\"5\" class=\"text-muted\">No job titles were found. "
+
+msgid "<tr><td colspan=\"5\" class=\"text-muted\">Набор пуст: "
+msgstr "<tr><td colspan=\"5\" class=\"text-muted\">The kit is empty: "
+
+msgid "<tr><td colspan=\"7\" class=\"text-muted\">Движений пока нет.</td></tr>"
+msgstr "<tr><td colspan=\"7\" class=\"text-muted\">No movements yet.</td></tr>"
+
+msgid "<tr><td colspan=\"7\" class=\"text-muted\">Остатков по этой позиции ещё нет.</td></tr>"
+msgstr "<tr><td colspan=\"7\" class=\"text-muted\">There is no stock for this item yet.</td></tr>"
+
+msgid "<tr><td colspan=\"7\" class=\"text-muted\">Складов ещё нет. "
+msgstr "<tr><td colspan=\"7\" class=\"text-muted\">No warehouses yet. "
+
+msgid "<tr><td colspan=\"9\" class=\"text-muted\">Лимитов нет: "
+msgstr "<tr><td colspan=\"9\" class=\"text-muted\">No limits: "
+
+msgid "<tr><td>Заказов в расчёте</td><td class=\"text-end\">%d</td></tr>"
+msgstr "<tr><td>Orders counted</td><td class=\"text-end\">%d</td></tr>"
+
+msgid "<tr><td>Медиана</td><td class=\"text-end fw-bold\">%s ч</td></tr>"
+msgstr "<tr><td>Median</td><td class=\"text-end fw-bold\">%s h</td></tr>"
+
+msgid "<tr><td>Среднее</td><td class=\"text-end\">%s ч</td></tr>"
+msgstr "<tr><td>Average</td><td class=\"text-end\">%s h</td></tr>"
+
+msgid "<tr><td>Худший случай</td><td class=\"text-end\">%s ч</td></tr>"
+msgstr "<tr><td>Worst case</td><td class=\"text-end\">%s h</td></tr>"
+
+msgid "<tr><th>Позиция</th><th>Ед.</th><th>Выдано</th></tr>%s</table>"
+msgstr "<tr><th>Item</th><th>Unit</th><th>Issued</th></tr>%s</table>"
+
+msgid "<tr><th>Позиция</th><th>Запрошено</th><th>К выдаче</th>"
+msgstr "<tr><th>Item</th><th>Requested</th><th>To issue</th>"
+
+msgid "<tr><th>№</th><th>Позиция</th><th>Артикул</th><th>Ед.</th>"
+msgstr "<tr><th>#</th><th>Item</th><th>Reference</th><th>Unit</th>"
+
+msgid "30 дней»: месяц — с первого числа, квартал — с начала квартала, "
+msgstr "30 days”: a month starts on the 1st, a quarter at the start of the quarter, "
+
+msgid "а у витрины не указана группа согласующих. Заказ создан, "
+msgstr "and the catalog has no approver group. The order has been created, "
+
+msgid "без порядка. Уровень выводится из названия по шаблону: «главный» — шестьдесят, "
+msgstr "with no order to it. The level is derived from the name by a pattern: “chief” is sixty, "
+
+msgid "Без склада заказы негде выдавать.</td></tr>"
+msgstr "Without a warehouse there is nowhere to issue orders from.</td></tr>"
+
+msgid "В витрину можно завести только расходные материалы и картриджи: "
+msgstr "Only consumables and cartridges can be put in a catalog: "
+
+msgid "В корзине "
+msgstr "In the cart: "
+
+msgid "в корзине %d</span>"
+msgstr "in the cart %d</span>"
+
+msgid "В корзине есть позиция, которой нет в этой витрине. "
+msgstr "The cart contains an item that is not in this catalog. "
+
+msgid "в отчёт по сотрудникам и в лимиты списанное не попадает. "
+msgstr "a write-off does not appear in the report by employee, nor in the limits. "
+
+msgid "В первой строке не найден столбец «наименование». "
+msgstr "The column “name” was not found in the first row. "
+
+msgid "В справочнике GLPI нет записи "
+msgstr "There is no GLPI record of type "
+
+msgid "В этой витрине пока нет позиций.</div></div>"
+msgstr "This catalog has no items yet.</div></div>"
+
+msgid "Взять набор</button>"
+msgstr "Take the kit</button>"
+
+msgid "Витрин, доступных в этом подразделении, нет.</div></div>"
+msgstr "There are no catalogs available in this entity.</div></div>"
+
+msgid "Витрина не найдена или недоступна.</div></div>"
+msgstr "The catalog was not found or is unavailable.</div></div>"
+
+msgid "Витрина переведена в подразделение «%s». Вместе с ней переехали: "
+msgstr "The catalog has been moved to the entity “%s”. Moved along with it: "
+
+msgid "Витрина сохранена не в корневой организации. Сотрудники, которые "
+msgstr "The catalog was saved outside the root entity. Employees who "
+
+msgid "Витрину нельзя удалить: по ней есть заказы (%d). "
+msgstr "The catalog cannot be deleted: it has orders (%d). "
+
+msgid "витрины, строку нужно убрать.</td><td class=\"text-end\">%s</td></tr>"
+msgstr "catalog, so the line has to be removed.</td><td class=\"text-end\">%s</td></tr>"
+
+msgid "внизу страницы, затем добавьте в него позиции.</div>"
+msgstr "at the bottom of the page, then add items to it.</div>"
+
+msgid "Внимание: у витрины не указана группа согласующих. "
+msgstr "Warning: the catalog has no approver group. "
+
+msgid "всё, что входит в набор. Потом можно что-то убрать или добавить.</div>"
+msgstr "the kit contains into the cart at once. You can then remove or add something.</div>"
+
+msgid "Выберите согласующего: по правилам этой витрины заказ "
+msgstr "Pick an approver: by the rules of this catalog the order "
+
+msgid "Выберите согласующего: по правилам этой витрины заказ отправляется "
+msgstr "Pick an approver: by the rules of this catalog the order is sent "
+
+msgid "выдадут столько, сколько есть.</div>"
+msgstr "and only what is there will be issued.</div>"
+
+msgid "Выдать и списать</button>"
+msgstr "Issue and write off</button>"
+
+msgid "выдача конкретных экземпляров с инвентарными номерами пока "
+msgstr "issuing specific units with inventory numbers is not "
+
+msgid "Выдача не проведена: на складе не хватает позиций. "
+msgstr "The issue was not carried out: the warehouse is short of items. "
+
+msgid "Выдача не проведена: превышен жёсткий лимит. "
+msgstr "The issue was not carried out: a hard limit was exceeded. "
+
+msgid "год — с первого января. Первого числа счётчик обнуляется.</li>"
+msgstr "and a year on 1 January. On the first day the counter resets.</li>"
+
+msgid "Готово к получению</button>"
+msgstr "Ready for pickup</button>"
+
+msgid "группа согласующих. Заказ ждёт, пока согласование не будет "
+msgstr "approver group. The order waits until the approval is "
+
+msgid "даже если кнопку разблокировали в браузере.</li>"
+msgstr "even if the button was unlocked in the browser.</li>"
+
+msgid "движения типа «выдача». Заказы, которые ещё не выданы, здесь не учитываются.</p>"
+msgstr "movements of the “issue” type. Orders not yet issued are not counted here.</p>"
+
+msgid "для комплектования.</p>"
+msgstr "for picking.</p>"
+
+msgid "Для отдела: "
+msgstr "For the group: "
+
+msgid "Для подразделения: "
+msgstr "For the entity: "
+
+msgid "Для сотрудника: "
+msgstr "For the employee: "
+
+msgid "до выдачи со склада, в часах календарного времени.</div>"
+msgstr "until it is issued from the warehouse, in calendar hours.</div>"
+
+msgid "до целевого запаса по позициям ниже порога.</div>"
+msgstr "up to the target stock for items below the threshold.</div>"
+
+msgid "Добавить</button></div>"
+msgstr "Add</button></div>"
+
+msgid "Добавьте склад на вкладке витрины.</div></div>"
+msgstr "Add a warehouse on the catalog's tab.</div></div>"
+
+msgid "единица измерения берётся из позиции витрины.</li>"
+msgstr "and the unit of measure comes from the catalog item.</li>"
+
+msgid "за этим заказом.</p>"
+msgstr "for this order.</p>"
+
+msgid "Завести</button></div>"
+msgstr "Create</button></div>"
+
+msgid "Задать</button>"
+msgstr "Set</button>"
+
+msgid "Заказ не отправлен: напишите в комментарии, зачем нужен заказ. "
+msgstr "The order was not submitted: write in the comment why it is needed. "
+
+msgid "Заказ не отправлен: превышен жёсткий лимит «%s» (%s). За период уже "
+msgstr "The order was not submitted: the hard limit “%s” (%s) was exceeded. In this period "
+
+msgid "заказ сверх лимита нельзя отправить</label></div>"
+msgstr "an order above the limit cannot be submitted</label></div>"
+
+msgid "заказывать можно сколько угодно.</td></tr>"
+msgstr "you may order as much as you like.</td></tr>"
+
+msgid "и проверки файла.</div></div>"
+msgstr "and the file is checked.</div></div>"
+
+msgid "и windows-1251, в которой сохраняет русский Excel. Разделителем может быть "
+msgstr "and windows-1251, which Russian Excel saves in. The separator may be "
+
+msgid "или добавить. Типичный пример — комплект нового сотрудника.</div>"
+msgstr "or add something. A new joiner set is the typical example.</div>"
+
+msgid "или недоступен в вашем подразделении.</div>"
+msgstr "or is unavailable in your entity.</div>"
+
+msgid "или секретаря выше специалиста не поднимаются, даже если в названии есть "
+msgstr "or a secretary never rise above a specialist, even when the name contains "
+
+msgid "Инвентаризация: "
+msgstr "Stock count: "
+
+msgid "История выдач ссылается на её позиции и склады. "
+msgstr "The issue history refers to its items and warehouses. "
+
+msgid "как «не ниже главного специалиста», но должность в GLPI — плоский справочник "
+msgstr "as “at least a chief specialist”, but a job title in GLPI is a flat dictionary "
+
+msgid "как заказ с ним выдан. Вернуть его можно разрешением — оно гасится "
+msgstr "an order containing it is issued. A permission brings it back — and is used up "
+
+msgid "Как считается лимит</button></h2>"
+msgstr "How the limit is calculated</button></h2>"
+
+msgid "Код позиции. Если он совпал с существующей номенклатурой, "
+msgstr "The item's code. If it matches an existing item, "
+
+msgid "комплектуют, лимит не расходует. В счёт идут проводки списания со склада, "
+msgstr "or picking does not spend the limit. What counts are the warehouse write-off entries, "
+
+msgid "корректировка количеств, готовность и выдача.</em></p>"
+msgstr "the quantity adjustment, the readiness and the issue.</em></p>"
+
+msgid "личную норму не трогает. <i>Одна на всю область</i> — отдел (или "
+msgstr "does not touch the personal allowance. <i>Shared across the scope</i> — the group (or "
+
+msgid "ложатся в корзину в нужных количествах; дальше он может что-то убрать "
+msgstr "land in the cart in the right quantities; they can then remove "
+
+msgid "людьми, и получить сверх него, оформив выдачу на себя, уже нельзя.</p>"
+msgstr "its people, and taking more than that by ordering it for yourself is no longer possible.</p>"
+
+msgid "на склад для комплектования.</p>"
+msgstr "to the warehouse for picking.</p>"
+
+msgid "Набор «%s» выдаётся один раз, и вы его уже получали. Если он нужен "
+msgstr "The kit “%s” is issued once and you have already received it. If you need it "
+
+msgid "Название позиции. По нему же ищется совпадение с уже "
+msgstr "The item's name. It is also used to match an existing "
+
+msgid "назначено вручную в этой заявке.</p>"
+msgstr "assigned by hand in this ticket.</p>"
+
+msgid "Накладная № "
+msgstr "Issue note No. "
+
+msgid "Накладная</a>"
+msgstr "Issue note</a>"
+
+msgid "Начальное количество. Проводится как обычный приход "
+msgstr "The opening quantity. It is booked as an ordinary receipt "
+
+msgid "Не выбрано, на что действует лимит: укажите позицию "
+msgstr "You have not selected what the limit covers: name an item "
+
+msgid "не выдан, количества могут измениться, а накладная — это документ "
+msgstr "is issued, the quantities may still change, and an issue note is a document "
+
+msgid "не комплектует.</p>"
+msgstr "pick the order.</p>"
+
+msgid "ничего не выдавалось.</p>"
+msgstr "nothing was issued.</p>"
+
+msgid "о состоявшейся выдаче.</p>"
+msgstr "about an issue that has happened.</p>"
+
+msgid "обновлено: %d, пропущено строк: %d, оприходовано единиц: %d.</div>"
+msgstr "updated: %d, rows skipped: %d, units booked: %d.</div>"
+
+msgid "Обратитесь к администратору.</div>"
+msgstr "Contact your administrator.</div>"
+
+msgid "объект: "
+msgstr "location: "
+
+msgid "Одна позиция номенклатуры может входить в витрину только один раз — "
+msgstr "One item can be in a catalog only once — "
+
+msgid "одного получателя. Для общих норм показан один запас области целиком, "
+msgstr "one recipient. For shared allowances one pool of the scope is shown as a whole, "
+
+msgid "он в пределах порога рутинных заказов витрины.</div>"
+msgstr "it is within the catalog's routine order threshold.</div>"
+
+msgid "Основание обязательно.</div>"
+msgstr "The grounds are mandatory.</div>"
+
+msgid "осталась — оформите заказ заново.</p>"
+msgstr "remains — submit a new order.</p>"
+
+msgid "остатки по каждому складу и расчёт «нужно докупить» — "
+msgstr "the stock in each warehouse and the “to purchase” calculation — "
+
+msgid "отдел "
+msgstr "the group "
+
+msgid "Отменить заказ</button>"
+msgstr "Cancel the order</button>"
+
+msgid "Отправить заказ</button>"
+msgstr "Submit the order</button>"
+
+msgid "отправку до конца периода.</p>"
+msgstr "submission until the end of the period.</p>"
+
+msgid "Переместить</button>"
+msgstr "Transfer</button>"
+
+msgid "печати появится там же.</p>"
+msgstr "button will appear right there.</p>"
+
+msgid "По запросу ничего не нашлось. <a href=\"%s\">Показать все позиции</a>.</div></div>"
+msgstr "Nothing matched your query. <a href=\"%s\">Show all items</a>.</div></div>"
+
+msgid "Повтор наименования внутри файла (строка "
+msgstr "The name is repeated inside the file (row "
+
+msgid "Повторить заказ</button>"
+msgstr "Repeat the order</button>"
+
+msgid "подразделение "
+msgstr "the entity "
+
+msgid "подразделение вверху страницы — или выберите его вместе "
+msgstr "entity at the top of the page — or select it together "
+
+msgid "подразделение, или должность) расходует общий запас вместе со своими "
+msgstr "entity, or job title) spends one pool together with "
+
+msgid "Позиции «%s» можно взять не больше %d за один заказ. "
+msgstr "No more than %d of the item “%s” can be taken per order. "
+
+msgid "позиций — сначала заведите их на вкладке «Позиции».</div>"
+msgstr "items — create them on the “Items” tab first.</div>"
+
+msgid "пока в нём нечего выдавать.</td></tr>"
+msgstr "there is nothing in it to issue yet.</td></tr>"
+
+msgid "получено %d из %d, в заказе ещё %d. %s</div>"
+msgstr "%d of %d received, %d more in this order. %s</div>"
+
+msgid "попасть и в отдел, и в личный счёт.</li>"
+msgstr "count against both the group and a personal balance.</li>"
+
+msgid "потом в него добавляются позиции.</div>"
+msgstr "then items are added to it.</div>"
+
+msgid "поэтому графа «людей» для них не заполняется.</div>"
+msgstr "so the “people” column is left empty for them.</div>"
+
+msgid "правил, проверяется каждое; сработает то, которое исчерпано раньше.</li>"
+msgstr "rules, each of them is checked; the one exhausted first is what fires.</li>"
+
+msgid "при отправке заказа. Жёсткий лимит остановит заказ на сервере, "
+msgstr "when the order is submitted. A hard limit stops the order on the server, "
+
+msgid "при следующей выдаче.</div>"
+msgstr "at the next issue.</div>"
+
+msgid "При уменьшении причина обязательна — она попадёт в накладную и в ленту заявки.</div>"
+msgstr "A reason is mandatory when reducing — it goes into the issue note and the ticket timeline.</div>"
+
+msgid "Приложите файл ещё раз и нажмите «Импортировать».</div>"
+msgstr "Attach the file again and press “Import”.</div>"
+
+msgid "Применить</button>"
+msgstr "Apply</button>"
+
+msgid "Провести корректировку</button>"
+msgstr "Record the adjustment</button>"
+
+msgid "работает и без неё, но заявка создаётся без назначенной группы: "
+msgstr "works without one, but the ticket is created with no group assigned: "
+
+msgid "работают из корня, её не увидят: витрина видна только в своей "
+msgstr "work from the root will not see it: a catalog is visible only in its own "
+
+msgid "Разметить справочник должностей</button> "
+msgstr "Mark up the job title dictionary</button> "
+
+msgid "разрешает — превышение увидит согласующий. <b>Жёсткий</b> запрещает "
+msgstr "through — the approver will see the excess. <b>A hard one</b> blocks "
+
+msgid "распространяется, <b>на что</b> и <b>сколько</b> можно получить за период.</p>"
+msgstr "applies to, <b>what</b> it covers and <b>how much</b> may be received per period.</p>"
+
+msgid "расход у одного склада и приход у другого, чтобы история сходилась "
+msgstr "an issue in one warehouse and a receipt in the other, so that the history adds up "
+
+msgid "расходный материал, картридж или актив.</div>"
+msgstr "a consumable, a cartridge or an asset.</div>"
+
+msgid "расхождение с учётным будет записано в движения.</div>"
+msgstr "the difference from the recorded figure will be written into the movements.</div>"
+
+msgid "резерв со склада снят.%s</p>"
+msgstr "and the warehouse reservation has been released.%s</p>"
+
+msgid "Руководитель заполнен далеко не у всех сотрудников, и без группы "
+msgstr "The manager field is far from filled in for everybody, and without a group "
+
+msgid "руководящие должности — семьдесят. Обслуживающие должности вроде помощника "
+msgstr "and managerial titles are seventy. Support titles such as an assistant "
+
+msgid "с дочерними, чтобы увидеть все доступные вам витрины.</div>"
+msgstr "with its children, to see every catalog available to you.</div>"
+
+msgid "с обеих сторон.</div>"
+msgstr "on both sides.</div>"
+
+msgid "складов %d, позиций %d, наборов %d, лимитов %d, остатков %d, "
+msgstr "warehouses %d, items %d, kits %d, limits %d, stock rows %d, "
+
+msgid "слово «руководитель».</p>"
+msgstr "the word “manager”.</p>"
+
+msgid "Согласующий не определён: у сотрудника не заполнен руководитель, "
+msgstr "The approver was not determined: the employee's manager field is empty, "
+
+msgid "сотрудник "
+msgstr "the employee "
+
+msgid "Сотрудник нажимает «Взять набор» в магазине, и все позиции набора "
+msgstr "The employee presses “Take the kit” in the store, and all the kit's items "
+
+msgid "сотрудник, отдел и подразделение считаются порознь: заказ на отдел "
+msgstr "the employee, the group and the entity are counted separately: an order for a group "
+
+msgid "сотрудникам, которые заказывали за последние три месяца, а предел указан на "
+msgstr "the employees who ordered in the last three months, while the limit is stated per "
+
+msgid "Спасибо, оценка учтена: "
+msgstr "Thank you, your rating has been recorded: "
+
+msgid "Списание больше остатка: на складе "
+msgstr "The write-off exceeds the stock: in the warehouse "
+
+msgid "списать. Уже списанное возвращено на склад, заказ остался "
+msgstr "be written off. What was already written off has been returned to the warehouse, and the order stays "
+
+msgid "Списать</button>"
+msgstr "Write off</button>"
+
+msgid "списывается с лимита отдела; личные правила «по должности» и "
+msgstr "is charged to the group's limit; personal rules “by job title” and "
+
+msgid "Справочник заполняется при синхронизации пользователей.</td></tr>"
+msgstr "The dictionary is filled in when users are synchronised.</td></tr>"
+
+msgid "Строка "
+msgstr "Row "
+
+msgid "тел. "
+msgstr "phone "
+
+msgid "Тип расходного материала. Если такой категории ещё нет, "
+msgstr "The type of consumable. If there is no such category yet, "
+
+msgid "то есть фактически полученное сотрудником.</li>"
+msgstr "that is, what the employee actually received.</li>"
+
+msgid "точка с запятой, запятая или табуляция.</div>"
+msgstr "a semicolon, a comma or a tab.</div>"
+
+msgid "У витрины не указана группа исполнителей. Очередь склада в плагине "
+msgstr "The catalog has no fulfilment group. The plugin's warehouse queue "
+
+msgid "у сотрудника не заполнен руководитель, а у витрины нет группы согласующих.</div>"
+msgstr "the employee's manager field is empty and the catalog has no approver group.</div>"
+
+msgid "Укажите другой номер или оставьте поле пустым — номер "
+msgstr "Use a different number or leave the field empty — the number "
+
+msgid "Уровень изменён вручную и не будет "
+msgstr "The level was changed by hand and will not be "
+
+msgid "Утвердить количества</button>"
+msgstr "Approve the quantities</button>"
+
+msgid "Уточните поиск, чтобы найти нужную.</div>"
+msgstr "Narrow the search to find the one you need.</div>"
+
+msgid "учётных записей)</span>"
+msgstr "accounts)</span>"
+
+msgid "целиком за один раз. Файл CSV, первая строка — названия столбцов.</p>"
+msgstr "in one go. A CSV file whose first row holds the column names.</p>"
+
+msgid "Эта номенклатура не заведена ни в одну витрину магазина.</div>"
+msgstr "This item is not in any store catalog.</div>"
+
+msgid "Эта номенклатура уже заведена в витрину. "
+msgstr "This item is already in the catalog. "
+
+msgid "Этот склад относится к другому подразделению — движения по нему "
+msgstr "This warehouse belongs to another entity — movements on it "
+
+msgid "class=\"form-control form-control-sm mb-2\" placeholder=\"Фактическое количество\" required>"
+msgstr "class=\"form-control form-control-sm mb-2\" placeholder=\"Actual quantity\" required>"
+
+msgid "class=\"form-control form-control-sm\" placeholder=\"Кол-во\" required></div>"
+msgstr "class=\"form-control form-control-sm\" placeholder=\"Qty\" required></div>"
+
+msgid "class=\"form-control form-control-sm\" placeholder=\"Количество\" required></div>"
+msgstr "class=\"form-control form-control-sm\" placeholder=\"Quantity\" required></div>"
+
+msgid "class=\"form-control form-control-sm\" placeholder=\"Номер акта\"></div>"
+msgstr "class=\"form-control form-control-sm\" placeholder=\"Document number\"></div>"
+
+msgid "class=\"form-control form-control-sm\" placeholder=\"обязательна при уменьшении\">"
+msgstr "class=\"form-control form-control-sm\" placeholder=\"mandatory when reducing\">"
+
+msgid "class=\"form-control form-control-sm\" placeholder=\"Цена за ед.\"></div>"
+msgstr "class=\"form-control form-control-sm\" placeholder=\"Price per unit\"></div>"
+
+msgid "GLPI и сразу добавит его в витрину. Так заводят номенклатуру с нуля.</div>"
+msgstr "dictionary and adds it to the catalog straight away. This is how items are created from scratch.</div>"
+
+msgid "maxlength=\"255\" placeholder=\"Пишет синим, толщина 0,7 мм\"></div>"
+msgstr "maxlength=\"255\" placeholder=\"Writes blue, 0.7 mm\"></div>"
+
+msgid "name=\"add_item\" value=\"1\">Добавить в набор</button></div>"
+msgstr "name=\"add_item\" value=\"1\">Add to the kit</button></div>"
+
+msgid "name=\"add\" value=\"1\">Добавить</button></div>"
+msgstr "name=\"add\" value=\"1\">Add</button></div>"
+
+msgid "name=\"add\" value=\"1\">Создать</button></div>"
+msgstr "name=\"add\" value=\"1\">Create</button></div>"
+
+msgid "name=\"clear\" value=\"1\">Очистить корзину</button>"
+msgstr "name=\"clear\" value=\"1\">Empty the cart</button>"
+
+msgid "name=\"grant\" value=\"1\">Разрешить повторно</button></div>"
+msgstr "name=\"grant\" value=\"1\">Allow a repeat</button></div>"
+
+msgid "name=\"rate\" value=\"%d\" title=\"%d из 5\">%s</button>"
+msgstr "name=\"rate\" value=\"%d\" title=\"%d of 5\">%s</button>"
+
+msgid "onchange=\"this.form.submit()\"><option value=\"0\">— выберите —</option>"
+msgstr "onchange=\"this.form.submit()\"><option value=\"0\">— select —</option>"
+
+msgid "onclick=\"sfStep(this,-1)\" aria-label=\"меньше\">&minus;</button>"
+msgstr "onclick=\"sfStep(this,-1)\" aria-label=\"less\">&minus;</button>"
+
+msgid "onclick=\"sfStep(this,1)\" aria-label=\"больше\">+</button>"
+msgstr "onclick=\"sfStep(this,1)\" aria-label=\"more\">+</button>"
+
+msgid "placeholder=\"Бумага — 4 пачки в месяц\" required></div>"
+msgstr "placeholder=\"Paper — 4 packs a month\" required></div>"
+
+msgid "placeholder=\"Комментарий\">"
+msgstr "placeholder=\"Comment\">"
+
+msgid "placeholder=\"Комплект нового сотрудника\" required></div>"
+msgstr "placeholder=\"New joiner set\" required></div>"
+
+msgid "placeholder=\"название или артикул\"></div>"
+msgstr "placeholder=\"name or reference\"></div>"
+
+msgid "placeholder=\"наименование;артикул;единица;цена;остаток\">"
+msgstr "placeholder=\"name;reference;unit;price;stock\">"
+
+msgid "placeholder=\"Номер документа\">"
+msgstr "placeholder=\"Document number\">"
+
+msgid "placeholder=\"номер записи в справочнике GLPI\" required></div>"
+msgstr "placeholder=\"record id in the GLPI dictionary\" required></div>"
+
+msgid "placeholder=\"Основание: порча, утрата, срок годности\" required>"
+msgstr "placeholder=\"Grounds: damage, loss, expiry\" required>"
+
+msgid "placeholder=\"Основание\">"
+msgstr "placeholder=\"Grounds\">"
+
+msgid "placeholder=\"Перевод в другое подразделение, утрата\"></div>"
+msgstr "placeholder=\"Moved to another entity, lost\"></div>"
+
+msgid "placeholder=\"Поиск по названию должности\">"
+msgstr "placeholder=\"Search by job title\">"
+
+msgid "placeholder=\"Уточнение: модуль, кабинет, мероприятие\">"
+msgstr "placeholder=\"Details: unit, room, event\">"
+
+msgid "placeholder=\"Что и кому выдаётся\"></div>"
+msgstr "placeholder=\"What is issued and to whom\"></div>"
+
+msgid "style=\"max-width:180px\" placeholder=\"№ накладной\">"
+msgstr "style=\"max-width:180px\" placeholder=\"Note No.\">"
+
+msgid "style=\"max-width:200px\" placeholder=\"причина отмены\">"
+msgstr "style=\"max-width:200px\" placeholder=\"reason for cancelling\">"
+
+msgid "title=\"0 — без ограничения\"></div>"
+msgstr "title=\"0 means no limit\"></div>"
+
+msgid "title=\"Применить количество\">OK</button>"
+msgstr "title=\"Apply the quantity\">OK</button>"
+
+msgid "title=\"Убрать из корзины\">&times;</button>"
+msgstr "title=\"Remove from the cart\">&times;</button>"
+
+msgid "title=\"Убрать из набора\">&times;</button></form>"
+msgstr "title=\"Remove from the kit\">&times;</button></form>"
+
+msgid "title=\"Удалить\">&times;</button></form>"
+msgstr "title=\"Delete\">&times;</button></form>"
+
+msgid "value=\"%d\" aria-label=\"количество\">"
+msgstr "value=\"%d\" aria-label=\"quantity\">"
+
+
+
+# Печатная накладная: подписи графов бланка.
+
+msgid "Накладная № %s"
+msgstr "Issue note No. %s"
+
+msgid "Печать"
+msgstr "Print"
+
+msgid "К очереди выдачи"
+msgstr "To the issue queue"
+
+msgid "№ %s от %s"
+msgstr "No. %s of %s"
+
+msgid "Кому выдано:"
+msgstr "Issued to:"
+
+msgid "Заказ оформил:"
+msgstr "Ordered by:"
+
+msgid "Основание:"
+msgstr "Grounds:"
+
+msgid "заказ № %d"
+msgstr "order No. %d"
+
+msgid ", заявка № %d"
+msgstr ", ticket No. %d"
+
+msgid "Склад выдачи:"
+msgstr "Issuing warehouse:"
+
+msgid "Назначение:"
+msgstr "Purpose:"
+
+msgid "Ед."
+msgstr "Unit"
+
+msgid "Заказано"
+msgstr "Requested"
+
+msgid "Выдано меньше: %s"
+msgstr "Less was issued: %s"
+
+msgid "Итого"
+msgstr "Total"
+
+msgid "<div>Всего отпущено на сумму <strong>%s ₽</strong></div>"
+msgstr "<div>Total value released: <strong>%s</strong></div>"
+
+msgid "<div>Всего наименований <strong>%d</strong>, единиц <strong>%d</strong></div>"
+msgstr "<div>Items in total: <strong>%d</strong>, units: <strong>%d</strong></div>"
+
+msgid "Выдал"
+msgstr "Issued by"
+
+msgid "подпись, расшифровка"
+msgstr "signature, name in full"
+
+msgid "Получил"
+msgstr "Received by"

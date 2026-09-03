@@ -1,0 +1,244 @@
+{% import 'components/form/fields_macros.html.twig' as fields %}
+
+{#
+  Настройки витрины. Поля идут строго друг под другом и разбиты на разделы:
+  администратор читает форму сверху вниз как инструкцию, а не ищет нужное
+  поле глазами в двух колонках. Ширину задаём field_class: 'col-12'.
+#}
+{% set full = {'field_class': 'col-12'} %}
+
+{#
+  Тег <form> у существующей записи открывает именно header.html.twig, и только
+  когда ему передан no_header: шапку в этом случае рисует механизм вкладок.
+  Без этой строки форма редактирования оставалась без <form>, и кнопка
+  «Сохранить» ничего не отправляла. Условие взято из generic_show_form ядра.
+#}
+{% set no_header = no_header|default(not item.isNewItem() and not _get._in_modal|default(false)) %}
+
+<div class="asset">
+  {{ include('components/form/header.html.twig', {'in_twig': true}) }}
+
+  {#
+    Витрина живёт в своём подразделении. Если администратор смотрит её из
+    другого — GLPI открывает форму только на чтение: тега <form> нет, кнопки
+    «Сохранить» тоже. Без объяснения это выглядит как сломанная кнопка,
+    поэтому причину пишем прямо в форме.
+  #}
+  {% if not item.isNewItem() and not item.can(item.fields['id'], constant('UPDATE')) %}
+    <div class="alert alert-warning m-3" role="status">
+      <div class="fw-bold mb-1">Настройки открыты только для чтения.</div>
+      <div>
+        Витрина принадлежит подразделению
+        <b>{{ get_item_name('Entity', item.fields['entities_id']) }}</b>,
+        а вы сейчас работаете в подразделении
+        <b>{{ get_item_name('Entity', session('glpiactive_entity')) }}</b>.
+        Переключите подразделение вверху страницы на то, которому принадлежит
+        витрина, — и настройки станут доступны для изменения.
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12 col-xxl-9">
+
+        {{ fields.largeTitle(__('Название и вид', 'storefront'), 'ti ti-building-store', true) }}
+
+        {{ fields.textField('name', item.fields['name'], __('Название витрины', 'storefront'), full|merge({
+          'required': true,
+          'helper': __('Так витрину увидит сотрудник: заголовок страницы заказа и подпись на плитке. Например «Канцелярия» или «Расходники для печати».', 'storefront')
+        })) }}
+
+        {{ fields.textareaField('description', item.fields['description'],
+          __('Описание для сотрудника', 'storefront'), full|merge({
+          'helper': __('Одна-две строки под названием: что здесь заказывают и чего ждать. Например «Заказ обрабатывается складом канцелярии. Крупные заказы согласует руководитель».', 'storefront')
+        })) }}
+
+        {{ fields.dropdownField('Entity', 'entities_id', item.fields['entities_id'],
+          __('Подразделение витрины', 'storefront'), full|merge({
+          'helper': __('Кому принадлежит витрина: её ведут кладовщики этого подразделения. При смене подразделения вместе с витриной переедут склады, номенклатура, остатки, история движений и заказы — иначе отчёты разъедутся.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('is_recursive', item.fields['is_recursive'],
+          __('Видна в дочерних подразделениях', 'storefront'), full|merge({
+          'helper': __('Да — витрину видят и в подразделениях ниже. Наследование в GLPI идёт только вниз; чтобы витрину видели выше, включите следующую настройку.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('show_to_parents', item.fields['show_to_parents'],
+          __('Доступна из родительских организаций', 'storefront'), full|merge({
+          'helper': __('Да — витрину увидят сотрудники, которые работают из корневой организации, хотя сама витрина принадлежит этой. Нужно, когда сотрудник организацию не переключает. Соседние организации витрину всё равно не видят: доступ открывается только вверх по дереву.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('is_active', item.fields['is_active'], __('Витрина работает', 'storefront'), full|merge({
+          'helper': __('Нет — витрина исчезает у сотрудников, но все настройки, остатки и прошлые заказы сохраняются.', 'storefront')
+        })) }}
+
+        {{ fields.textField('icon', item.fields['icon'], __('Значок витрины', 'storefront'), full|merge({
+          'helper': __('Класс значка из набора Tabler Icons: ti ti-pencil, ti ti-printer, ti ti-device-laptop. Полный список — на tabler.io/icons.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('show_on_home', item.fields['show_on_home'],
+          __('Плитка на главной странице самообслуживания', 'storefront'), full|merge({
+          'helper': __('Да — витрина появится отдельным квадратом на главной странице сотрудника, рядом с «Сообщить о проблеме» и «Запросить услугу». Плитка создаётся и убирается автоматически при сохранении.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownArrayField('illustration', item.fields['illustration'],
+          illustrations, __('Картинка плитки', 'storefront'), full|merge({
+          'helper': __('Штатная иллюстрация GLPI, которой рисуется квадрат на главной странице.', 'storefront')
+        })) }}
+
+
+        {{ fields.largeTitle(__('Объявление над каталогом', 'storefront'), 'ti ti-speakerphone') }}
+
+        {{ fields.textareaField('announcement', item.fields['announcement'],
+          __('Текст объявления', 'storefront'), full|merge({
+          'rows': 8,
+          'helper': __('Показывается заметной полосой над карточками товара — там, где сотрудник его точно прочитает. Сюда пишут правила приёма заявок, список обслуживаемых объектов, места выдачи, временные ограничения. Пустое поле — полосы нет.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownArrayField('announcement_level', item.fields['announcement_level'],
+          announcement_levels, __('Вид объявления', 'storefront'), full|merge({
+          'helper': __('Красным помечают ограничения приёма — их читают внимательнее, но если красным написано всё, читать перестают.', 'storefront')
+        })) }}
+
+
+        {{ fields.largeTitle(__('Кто согласует заказ', 'storefront'), 'ti ti-user-check') }}
+
+        {{ fields.dropdownArrayField('approval_mode', item.fields['approval_mode'],
+          approval_modes, __('Как определяется согласующий', 'storefront'), full|merge({
+          'helper': __('Выбирает сотрудник — при оформлении он сам указывает согласующего из списка подходящих по должности; это самый предсказуемый вариант. По цепочке руководителей — плагин берёт руководителя из карточки сотрудника и, если его должность ниже порога, идёт выше по цепочке. Только группа — заказ всегда уходит группе согласующих. Без согласования — заказ сразу попадает исполнителю.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownArrayField('min_title_level', item.fields['min_title_level'],
+          levels, __('Согласующий не ниже должности', 'storefront'), full|merge({
+          'helper': __('Ступень определяется по названию должности в карточке сотрудника: «главный специалист» — Главный, «начальник отдела» — Руководитель. Разбор проверяется на вкладке «Должности» слева в меню магазина, там же ступень можно поправить вручную. «Не ограничивать» снимает фильтр.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownField('Group', 'groups_id_approver', item.fields['groups_id_approver'],
+          __('Группа согласующих — запасной вариант', 'storefront'), full|merge({
+          'helper': __('Куда уходит заказ, если согласующий не определился: сотрудник его не выбрал или руководитель в карточке не заполнен. Заполните обязательно — иначе такие заказы зависнут без адресата.', 'storefront'),
+          'condition': {'is_assign': 1}
+        })) }}
+
+        {{ fields.numberField('auto_approve_amount', item.fields['auto_approve_amount'],
+          __('Согласовывать автоматически заказы дешевле, ₽', 'storefront'), full|merge({
+          'step': '0.01',
+          'min': 0,
+          'helper': __('Мелочь вроде пары ручек не стоит рабочего времени руководителя. Такой заказ сразу уходит на склад с отметкой «согласован автоматически». Ноль — автосогласования нет, согласуется всё.', 'storefront')
+        })) }}
+
+        {{ fields.numberField('auto_approve_lines', item.fields['auto_approve_lines'],
+          __('… и не длиннее, позиций', 'storefront'), full|merge({
+          'min': 0,
+          'helper': __('Второе условие автосогласования: должны выполняться оба сразу — и сумма, и число позиций. Ноль — число позиций не проверяется.', 'storefront')
+        })) }}
+
+
+        {{ fields.largeTitle(__('Кто выдаёт', 'storefront'), 'ti ti-package') }}
+
+        {{ fields.dropdownField('Group', 'groups_id_fulfil', item.fields['groups_id_fulfil'],
+          __('Группа-исполнитель', 'storefront'), full|merge({
+          'helper': __('Кладовщики: комплектуют заказ и выдают. Назначается исполнителем заявки, работает в разделе «Очередь заказов».', 'storefront'),
+          'condition': {'is_assign': 1}
+        })) }}
+
+        {{ fields.dropdownField('ITILCategory', 'itilcategories_id', item.fields['itilcategories_id'],
+          __('Категория заявки', 'storefront'), full|merge({
+          'helper': __('С этой категорией создаётся заявка по каждому заказу. Через неё работают привычные правила маршрутизации, SLA и отчёты GLPI.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownArrayField('reserve_mode', item.fields['reserve_mode'],
+          reserve_modes, __('Резервировать остаток под согласованный заказ', 'storefront'), full|merge({
+          'helper': __('Мягкий — согласованное количество помечается как обещанное и вычитается из «свободно», но физически остаётся на складе. Без резерва — остаток уменьшается только в момент выдачи, и один и тот же товар могут пообещать дважды.', 'storefront')
+        })) }}
+
+
+        {{ fields.largeTitle(__('Что видит и что может сотрудник', 'storefront'), 'ti ti-eye') }}
+
+        {{ fields.dropdownYesNo('show_prices', item.fields['show_prices'],
+          __('Показывать цены сотруднику', 'storefront'), full|merge({
+          'helper': __('Нет — витрина выглядит как выдача, а не как магазин: сотрудник видит только количества и остатки. Цены при этом продолжают считаться и видны исполнителю, в накладной и в отчётах. Отдельные позиции можно пометить платными на вкладке «Позиции» — у них цена показывается всегда, даже при выключенной настройке.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('show_stock', item.fields['show_stock'],
+          __('Показывать остаток на складе', 'storefront'), full|merge({
+          'helper': __('Да — под каждой позицией видно «в наличии N». Помогает не заказывать то, чего нет.', 'storefront')
+        })) }}
+
+        {{ fields.numberField('max_lines', item.fields['max_lines'],
+          __('Максимум позиций в одном заказе', 'storefront'), full|merge({
+          'min': 0,
+          'helper': __('Ноль — не ограничивать. Ограничение не про количество штук, а про число разных наименований в корзине.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('require_approver', item.fields['require_approver'],
+          __('Согласующий обязателен', 'storefront'), full|merge({
+          'helper': __('Да — без выбранного согласующего заказ не отправится. Работает в режиме «сотрудник выбирает согласующего сам»: страхует от заказов, которые уходят в группу или зависают без адресата.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('close_on_reject', item.fields['close_on_reject'],
+          __('Переводить заявку в «Решена» при отказе', 'storefront'), full|merge({
+          'helper': __('Да — при отказе согласующего к заявке прикладывается решение «Отказано в согласовании», и заявка переходит в «Решена». Закрывает её потом GLPI своим расписанием автозакрытия, а сотрудник успевает увидеть причину и при несогласии вернуть заявку в работу. Нет — заявка остаётся в работе у исполнителя, и срок решения продолжает идти.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('comment_required', item.fields['comment_required'],
+          __('Комментарий к заказу обязателен', 'storefront'), full|merge({
+          'helper': __('Да — без пояснения, зачем нужен заказ, отправить его нельзя. Согласующий видит комментарий в заявке, и ему не приходится переспрашивать.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('allow_recipient', item.fields['allow_recipient'],
+          __('Разрешить заказ не для себя', 'storefront'), full|merge({
+          'helper': __('Да — в корзине появляется выбор «Для кого заказ»: себе, сотруднику, отделу или подразделению. От выбора зависит, чей лимит расходуется.', 'storefront')
+        })) }}
+
+        {# Позиция «нет в каталоге» в этой версии не реализована: заказать
+           можно только то, что есть в номенклатуре витрины. Переключатель
+           убран из формы, чтобы не обещать сотруднику того, чего нет;
+           столбец в базе оставлен для будущей реализации. #}
+
+
+        {{ fields.largeTitle(__('Печатная накладная', 'storefront'), 'ti ti-printer') }}
+
+        {{ fields.textField('waybill_org', item.fields['waybill_org'],
+          __('Организация в шапке', 'storefront'), full|merge({
+          'helper': __('Как называется организация в бланке. Пусто — берётся название подразделения витрины.', 'storefront')
+        })) }}
+
+        {{ fields.textField('waybill_title', item.fields['waybill_title'],
+          __('Название документа', 'storefront'), full|merge({
+          'helper': __('Пусто — «Накладная на выдачу материальных ценностей».', 'storefront')
+        })) }}
+
+        {{ fields.textField('waybill_signatory', item.fields['waybill_signatory'],
+          __('Кто выдаёт: должность', 'storefront'), full|merge({
+          'helper': __('Печатается у подписи выдающего. Например «Кладовщик хозяйственного отдела». Пусто — строка остаётся для заполнения от руки.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('waybill_show_prices', item.fields['waybill_show_prices'],
+          __('Печатать цены и сумму', 'storefront'), full|merge({
+          'helper': __('Нет — в накладной только количества. Выдача бесплатная, и цены в бланке для сотрудника лишние.', 'storefront')
+        })) }}
+
+        {{ fields.dropdownYesNo('waybill_show_requested', item.fields['waybill_show_requested'],
+          __('Печатать графу «заказано»', 'storefront'), full|merge({
+          'helper': __('Да — рядом с выданным количеством видно, сколько просили. Полезно, когда склад выдал меньше.', 'storefront')
+        })) }}
+
+        {{ fields.textareaField('waybill_footer', item.fields['waybill_footer'],
+          __('Текст под подписями', 'storefront'), full|merge({
+          'helper': __('Например: «Претензии по количеству и качеству принимаются в день выдачи».', 'storefront')
+        })) }}
+
+        {{ fields.largeTitle(__('Служебное', 'storefront'), 'ti ti-notes') }}
+
+        {{ fields.textareaField('comment', item.fields['comment'],
+          __('Заметка для администраторов', 'storefront'), full|merge({
+          'helper': __('Сотрудникам не показывается.', 'storefront')
+        })) }}
+
+      </div>
+    </div>
+  </div>
+
+  {{ include('components/form/buttons.html.twig') }}
+</div>
