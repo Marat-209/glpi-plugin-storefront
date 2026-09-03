@@ -22,7 +22,7 @@
 
 use Glpi\Plugin\Hooks;
 
-define('PLUGIN_STOREFRONT_VERSION', '1.0.0-rc7');
+define('PLUGIN_STOREFRONT_VERSION', '1.0.0-rc8');
 define('PLUGIN_STOREFRONT_MIN_GLPI', '11.0.0');
 define('PLUGIN_STOREFRONT_MAX_GLPI', '11.99.99');
 

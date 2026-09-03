@@ -109,6 +109,30 @@ The schema is created on installation; the same two commands run the migration
 when the version changes. Through the web interface the plugin is installed as
 usual: **Setup → Plugins**.
 
+## Upgrading
+
+1. Replace the `plugins/storefront` directory with the new version.
+2. Run the migration — the same two commands:
+
+```bash
+php bin/console plugin:install storefront
+php bin/console plugin:activate storefront
+```
+
+Until the migration is run, GLPI considers the plugin to require an update and
+does not load its classes, so the store's pages return an error. That is GLPI's
+normal behaviour — just run both commands.
+
+If the catalog form comes up without the fields the new version adds — *Full
+page width*, for instance — GLPI is serving the form from its compiled-template
+cache. From 1.0.0-rc8 the plugin clears that cache itself — during the
+migration and on every enable, so disabling and enabling it is enough. When
+upgrading from an earlier version, clear the cache by hand:
+
+```bash
+php bin/console cache:clear
+```
+
 ## First setup
 
 1. **Entity and groups.** The entity that runs the warehouse, and two groups:

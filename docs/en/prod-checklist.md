@@ -136,6 +136,19 @@ php bin/console plugin:activate storefront
 > tile disappears. That is GLPI's normal behaviour rather than a fault — just
 > run the two commands.
 
+3. Open a catalog's form and check that the new version's fields are there. If
+   they are not, GLPI is serving the form from its compiled-template cache:
+
+```
+php bin/console cache:clear
+```
+
+> From 1.0.0-rc8 the plugin clears that cache itself — during the migration
+> and on every enable, so disabling and enabling it in the plugin list works
+> too. The manual command is for anyone upgrading from rc7 or earlier: in
+> production GLPI does not re-read changed templates, and installing a plugin
+> clears only the translations cache.
+
 Data survives an upgrade: the migration adds the missing columns and rights
 without deleting anything.
 

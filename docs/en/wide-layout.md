@@ -16,6 +16,11 @@ appearance” section**:
 
 ![The switch on the catalog form](../img/en/wide-setting.png)
 
+Not on the form? Then GLPI is serving the form from its compiled-template
+cache — which happens when upgrading from a version before 1.0.0-rc8.
+`php bin/console cache:clear` cures it; from 1.0.0-rc8 on, so does disabling
+and enabling the plugin.
+
 The setting is off by default, so upgrading the plugin changes nothing for
 catalogs that are already configured. Each catalog has its own switch: you can
 leave office supplies as they are and widen an equipment catalog with a hundred

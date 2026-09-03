@@ -544,7 +544,56 @@ function plugin_storefront_install(): bool
         ]
     );
 
+    // Шаблоны формы витрины GLPI держит скомпилированными и на рабочем
+    // контуре их не перечитывает. Установка плагина сбрасывает только кеш
+    // переводов, поэтому после обновления файлов форма отдавалась бы прежней,
+    // без новых полей. Убираем скомпилированные шаблоны сами.
+    plugin_storefront_clearTemplateCache();
+
     return true;
+}
+
+/**
+ * Плагин включают: обновляем скомпилированные шаблоны.
+ *
+ * GLPI вызывает эту функцию при каждом включении плагина. Так форма витрины
+ * обновляется и тогда, когда файлы заменили на ту же версию: миграция в этом
+ * случае не выполняется, а «выключить и включить» помогает.
+ */
+function plugin_storefront_activate(): void
+{
+    plugin_storefront_clearTemplateCache();
+}
+
+/**
+ * Сброс скомпилированных шаблонов Twig.
+ *
+ * Вызывается из установки и обновления плагина. Ошибка здесь не должна
+ * ломать установку: в худшем случае кеш чистится командой
+ * «php bin/console cache:clear».
+ *
+ * @return bool удалось ли сбросить кеш
+ */
+function plugin_storefront_clearTemplateCache(): bool
+{
+    try {
+        $dir = \Glpi\Kernel\Kernel::getCacheRootDir() . '/templates';
+        if (!is_dir($dir)) {
+            return false;
+        }
+        $done = false;
+        foreach ((array) glob($dir . '/*/*.php') as $file) {
+            if (is_file($file) && @unlink($file)) {
+                $done = true;
+            }
+        }
+        foreach ((array) glob($dir . '/*', GLOB_ONLYDIR) as $sub) {
+            @rmdir($sub);
+        }
+        return $done;
+    } catch (\Throwable $e) {
+        return false;
+    }
 }
 
 function plugin_storefront_uninstall(): bool

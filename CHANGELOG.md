@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.0.0-rc8 — 2026-09-03
+
+### Fixed
+
+- **An upgrade no longer keeps the old catalog form.** GLPI compiles its Twig
+  templates and, in the production environment, does not re-read a changed
+  template file; installing a plugin clears only the translations cache. So
+  after replacing the plugin's files and running the migration the catalog form
+  was still served from the compiled cache — without the fields the new version
+  adds, the *Full page width* switch among them, and the only cure was
+  `php bin/console cache:clear` run by hand. The plugin now drops the compiled
+  templates itself, as part of its own migration — and again whenever it is
+  enabled, which covers the case where the files were replaced by the same
+  version and no migration runs at all: disabling and enabling the plugin is
+  then enough.
+
+### Packaging
+
+- The release archive carries `docs/img`, so the screenshots in the manuals are
+  there when the documentation is read from the unpacked archive rather than
+  from GitHub.
+
 ## 1.0.0-rc7 — 2026-09-03
 
 ### Added
